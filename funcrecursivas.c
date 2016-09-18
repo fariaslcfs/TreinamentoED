@@ -29,12 +29,33 @@ int fibonacci(int n){
 /*  Faça uma função recursiva que permita inverter um número inteiro N. Ex: 123 - 321 */
 int inverte(int n){
 	if((n / 10) == 0){
-		return n % 10;
+		return n;
 	}
 	return inverte(n / 10) + (n % 10) * pow(10, abs(log10(n)));
 }
 
+int inverteSig(int n){
+	if(n < 0){
+		return -1 * inverte(n * -1);
+	}
+	return inverte(n);
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* Faça uma função recursiva que permita somar os elementos de um vetor de inteiros. */
+int somaVetor(int vet[], int n){
+	if(n == 1){
+		return vet[0];
+	}
+	return vet[n - 1] + somaVetor(vet, n - 1);
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
-
+/* Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N */
+int soma1aN(int n){
+	if(n == 1){
+		return 1;
+	}
+	return n + soma1aN(n - 1);
+}	
 
