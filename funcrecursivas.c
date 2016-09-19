@@ -114,13 +114,16 @@ int multRec(int a, int b){
 	if(a == 0 || b == 0){
 		return 0;
 	}
-	if(b == 2){
+	if(b == 1){
 		return a;
 	}
-	a += a;
-	multRec(a, b - 1);
+	int acc;
+	acc = a + multRec(a, b - 1);
 }
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 
+até N em ordem crescente. */
 
 
 

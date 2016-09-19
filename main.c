@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&n);
 	printf("\nINSIRA O SEGUNDO NUMERO\n");
 	scanf("%d",&k);
-	printf("%d MULTIPLICADO POR %d EH: %d", n, k, multRec(n, k));
+	printf("%d MULTIPLICADO POR %d EH: %d", n, k, multRec(n, k, n));
 	
 
 	                       
