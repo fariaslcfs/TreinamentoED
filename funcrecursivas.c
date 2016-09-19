@@ -6,7 +6,7 @@ int fatorial(int n){
 	if(n < 2) {
 		return 1;
 	}
-	return n * fatorial(n - 1);	
+	return n * fatorial(n - 1);	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -77,9 +77,34 @@ double inverteVetor(double vet[], int n){
 	if(n == 1){
 		return vet[0];
 	}
-	return inverteVetor(vet, n - 1);	
+	int aux;
+	aux = inverteVetor(vet, n - 1);
+	vet[0] = vet[n + 1];
+	vet[n + 1] = aux;
 }
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y. Escreva uma função recursiva mdc em C, 
+que retorna o máximo divisor comum de x e y. O mdc de x e y é definido como segue: se y é igual a 0, então mdc(x,y) é x; 
+caso contrário, mdc(x,y) é mdc (y, x%y), onde % é o operador resto.*/
+int maxDivCom(int a, int b){
+	if( b == 0){
+		return a;
+	}
+	return maxDivCom(b, a % b);
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um número natural N. 
+Por exemplo, o dígito 2 ocorre 3 vezes em 762021192 */
+int sumMatches(int n, int k){
+	if(n % 10 == n){
+		return n;
+	}
+	if(sumMatches(n / 10, k) == k){	
+		
+	}
+}
 
 
 

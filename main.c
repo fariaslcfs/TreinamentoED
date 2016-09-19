@@ -36,14 +36,21 @@ int main(int argc, char *argv[]) {
 
 	printf("\n\nPOTENCIA DE K ELEVADO A N. INSIRA N e K\n");
 	scanf("%d",&k);printf("\n"); scanf("%d",&n);
-	printf("\n%d ELEVADO A %d EH: %d", k, n, potenciakn(k,n)); */
+	printf("\n%d ELEVADO A %d EH: %d", k, n, potenciakn(k,n));
 	
 	double vetor[] = {2.0, 5.0, 1.0, 3.0, 4.0};
 	inverteVetor(vetor, 5);
 	
 	for(i = 0; i < 5; i++){
 		printf("%g  ",vetor[i]);
-	}
+	
 
+    
+	printf("\n\nMAXIMO DIVISOR COMUM DE %d E %d EH: %d\ns", 12, 8, maxDivCom(12, 8));  
+	
+	*/
+	
+	printf("%d APARECE %d VEZ(ES) EM: %d", 2, sumMatches(23422, 2), 23422);                             
+                                    
 	return 0;
 }

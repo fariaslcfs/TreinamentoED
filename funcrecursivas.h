@@ -15,3 +15,7 @@ int portenciakn(int k, int n);
 
 double inverteVetor(double ve[], int n);
 
+int maxDivCom(int a, int b);
+
+int sumMatches(int n, int k);
+
