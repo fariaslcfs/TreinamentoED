@@ -48,9 +48,52 @@ int main(int argc, char *argv[]) {
     
 	printf("\n\nMAXIMO DIVISOR COMUM DE %d E %d EH: %d\ns", 12, 8, maxDivCom(12, 8));  
 	
-	*/
+
 	
-	printf("%d APARECE %d VEZ(ES) EM: %d", 2, sumMatches(23422, 2), 23422);                             
-                                    
+	printf("\nSOMA OCORRENCIAS DE DIGITOS: INSIRA UM NUMERO INTEIRO E DIGITO QUE SE QUER CONTAR AS OCORRENCIAS: \n");
+	printf("NUMERO INTEIRO\n");
+	scanf("%d",&n);
+	printf("DIGITO\n");
+	scanf("%d",&k);
+	printf("\n%d APARECE %d VEZ(ES) EM: %d", k, sumMatches(n, k, 0), n);
+ 
+	*/       
+	                       
 	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

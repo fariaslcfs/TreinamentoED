@@ -17,5 +17,5 @@ double inverteVetor(double ve[], int n);
 
 int maxDivCom(int a, int b);
 
-int sumMatches(int n, int k);
+int sumMatches(int n, int k, int i);
 

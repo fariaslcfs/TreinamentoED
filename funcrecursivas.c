@@ -47,7 +47,7 @@ int somaVetor(int vet[], int n){
 	if(n == 1){
 		return vet[0];
 	}
-	return vet[n - 1] + somaVetor(vet, n - 1);
+	vet[n - 1] + somaVetor(vet, n - 1);
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -78,7 +78,7 @@ double inverteVetor(double vet[], int n){
 		return vet[0];
 	}
 	int aux;
-	aux = inverteVetor(vet, n - 1);
+	aux = inverteVetor(vet, n - 1); 
 	vet[0] = vet[n + 1];
 	vet[n + 1] = aux;
 }
@@ -91,40 +91,21 @@ int maxDivCom(int a, int b){
 	if( b == 0){
 		return a;
 	}
-	return maxDivCom(b, a % b);
+	maxDivCom(b, a % b);
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um número natural N. 
 Por exemplo, o dígito 2 ocorre 3 vezes em 762021192 */
-int sumMatches(int n, int k){
+int sumMatches(int n, int k, int i){
+	if(n % 10 == k){
+		i++;
+	}
 	if(n % 10 == n){
-		return n;
+		return i;
 	}
-	if(sumMatches(n / 10, k) == k){	
-		
-	}
+	sumMatches(n / 10, k, i);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
