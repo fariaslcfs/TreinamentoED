@@ -43,12 +43,9 @@ int main(int argc, char *argv[]) {
 	
 	for(i = 0; i < 5; i++){
 		printf("%g  ",vetor[i]);
-	
-
+	}
     
 	printf("\n\nMAXIMO DIVISOR COMUM DE %d E %d EH: %d\ns", 12, 8, maxDivCom(12, 8));  
-	
-
 	
 	printf("\nSOMA OCORRENCIAS DE DIGITOS: INSIRA UM NUMERO INTEIRO E DIGITO QUE SE QUER CONTAR AS OCORRENCIAS: \n");
 	printf("NUMERO INTEIRO\n");
@@ -58,6 +55,15 @@ int main(int argc, char *argv[]) {
 	printf("\n%d APARECE %d VEZ(ES) EM: %d", k, sumMatches(n, k, 0), n);
  
 	*/       
+
+	printf("\nMULTIPLICACAO POR SOMAS RECURSIVAS\n");
+	printf("INSIRA DOIS INTEIROS (a x b) \n\nINSIRA O PRIMEIRO NUMERO\n");
+	scanf("%d",&n);
+	printf("\nINSIRA O SEGUNDO NUMERO\n");
+	scanf("%d",&k);
+	printf("%d MULTIPLICADO POR %d EH: %d", n, k, multRec(n, k));
+	
+
 	                       
 	return 0;
 	

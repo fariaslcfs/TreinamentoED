@@ -106,6 +106,44 @@ int sumMatches(int n, int k, int i){
 	}
 	sumMatches(n / 10, k, i);
 }
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* A multiplicação de dois números inteiros pode ser feita através de somas sucessivas. Proponha um algoritmo recursivo
+Multip_Rec(n1,n2) que calcule a multiplicação de dois inteiros */
+int multRec(int a, int b){
+	if(a == 0 || b == 0){
+		return 0;
+	}
+	if(b == 2){
+		return a;
+	}
+	a += a;
+	multRec(a, b - 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
