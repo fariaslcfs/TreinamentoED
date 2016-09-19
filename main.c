@@ -6,8 +6,9 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int i, n;
-	printf("\nFATORIAL DE n: \nINSIRA UM NUMERO INTEIRO: \n");
+	int i, n, k;
+
+/*	printf("\nFATORIAL DE n: \nINSIRA UM NUMERO INTEIRO: \n");
 	scanf("%d",&n);
 	printf("O FATORIAL DE %d EH: %d\n", n, fatorial(n));
 	
@@ -33,7 +34,16 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&n);
 	printf("\nA SOMA DE 1 ATE %d EH: %d", n, soma1aN(n));
 
+	printf("\n\nPOTENCIA DE K ELEVADO A N. INSIRA N e K\n");
+	scanf("%d",&k);printf("\n"); scanf("%d",&n);
+	printf("\n%d ELEVADO A %d EH: %d", k, n, potenciakn(k,n)); */
 	
+	double vetor[] = {2.0, 5.0, 1.0, 3.0, 4.0};
+	inverteVetor(vetor, 5);
+	
+	for(i = 0; i < 5; i++){
+		printf("%g  ",vetor[i]);
+	}
 
 	return 0;
 }

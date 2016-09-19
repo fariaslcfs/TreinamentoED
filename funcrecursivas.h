@@ -11,3 +11,7 @@ int somaVetor(int vet[], int n);
 
 int soma1aN(int n);
 
+int portenciakn(int k, int n);
+
+double inverteVetor(double ve[], int n);
+

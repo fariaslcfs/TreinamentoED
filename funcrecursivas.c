@@ -57,5 +57,52 @@ int soma1aN(int n){
 		return 1;
 	}
 	return n + soma1aN(n - 1);
-}	
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* Crie um programa em C, que contenha uma função recursiva que receba dois inteiros positivos k e n e calcule kn. 
+Utilize apenas multiplicações. O programa principal deve solicitar ao usuário os valores de k e n e imprimir o resultado
+da chamada da função. */	
+int potenciakn(int k, int n){
+	if(n == 1){
+		return k;
+	}
+	return k * potenciakn(k, n - 1);			
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* Crie um programa em C que receba um vetor de números reais com 100 elementos. Escreva uma função recursiva que
+inverta ordem dos elementos presentes no vetor. */
+double inverteVetor(double vet[], int n){
+	if(n == 1){
+		return vet[0];
+	}
+	return inverteVetor(vet, n - 1);	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
