@@ -20,3 +20,5 @@ int maxDivCom(int a, int b);
 int sumMatches(int n, int k, int i);
 
 int multRec(int a, int b);
+
+int retNaturais(int n);

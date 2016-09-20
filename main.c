@@ -5,7 +5,8 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]){
+
 	int i, n, k;
 
 /*	printf("\nFATORIAL DE n: \nINSIRA UM NUMERO INTEIRO: \n");
@@ -54,7 +55,7 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&k);
 	printf("\n%d APARECE %d VEZ(ES) EM: %d", k, sumMatches(n, k, 0), n);
  
-	*/       
+      
 
 	printf("\nMULTIPLICACAO POR SOMAS RECURSIVAS\n");
 	printf("INSIRA DOIS INTEIROS (a x b) \n\nINSIRA O PRIMEIRO NUMERO\n");
@@ -63,41 +64,15 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&k);
 	printf("%d MULTIPLICADO POR %d EH: %d", n, k, multRec(n, k, n));
 	
-
+	*/ 
+	
+	printf("\nSEQUENCIA NATURAIS\nDIGITE UM INTEIRO\n");
+	scanf("%d", &n);
+	printf("\nA SEQUENCIA RECURSIVA DE 0 ATE %d EH:\n", n);
+	retNaturais(n);
+	
 	                       
 	return 0;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
