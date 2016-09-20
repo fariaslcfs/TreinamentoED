@@ -125,17 +125,32 @@ int multRec(int a, int b){
 
 /* Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 
 até N em ordem crescente. */
+
 int retNaturais(int n){
 	if(n == -1){
 		return 0;               
 	}	
 	int acc;
 	acc = 1 + retNaturais(n - 1);
-	printf("%d ", n);		
+	printf("%d ", n);	
 }
 
+int inverteSigRetNaturais(int n){
+	if(n < 0){
+		return -1 * retNaturais(n * -1);
+	}
+	return retNaturais(n);
+}	
+/*----------------------------------------------------------------------------------------------------------*/
 
-
+/* Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 
+0 até N em ordem decrescente */
+int retNaturaisDec(int){
+	if(n == -1){
+		exit(0);
+	}
+	printf("%d ", retNaturaisDec(n - 1));
+}
 
 
 

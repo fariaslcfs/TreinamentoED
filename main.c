@@ -69,7 +69,7 @@ int main(int argc, char *argv[]){
 	printf("\nSEQUENCIA NATURAIS\nDIGITE UM INTEIRO\n");
 	scanf("%d", &n);
 	printf("\nA SEQUENCIA RECURSIVA DE 0 ATE %d EH:\n", n);
-	retNaturais(n);
+	inverteSigRetNaturais(n);
 	
 	                       
 	return 0;
