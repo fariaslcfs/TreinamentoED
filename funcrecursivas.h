@@ -12,7 +12,7 @@ int soma1aN(int n);
 
 int portenciakn(int k, int n);
 
-double inverteVetor(double ve[], int n);
+float inverteVetor(float ve[], int n);
 
 int maxDivCom(int a, int b);
 
@@ -21,8 +21,11 @@ int sumMatches(int n, int k, int i);
 int multRec(int a, int b);
 
 int retNaturais(int n);
-int inverteSigRetNaturais(int n);
+int retNaturaisSig(int n);
 
 int retNaturaisDec(int);
+int retNaturaisDecSig(int n);
 
+int retSeqPar(int n);
+int retSeqParSig(int n);
 

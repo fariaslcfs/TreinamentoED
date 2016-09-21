@@ -48,7 +48,7 @@ int somaVetor(int vet[], int n){
 	if(n == 1){
 		return vet[0];
 	}
-	vet[n - 1] + somaVetor(vet, n - 1);
+	return vet[n - 1] + somaVetor(vet, n - 1);
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -74,14 +74,25 @@ int potenciakn(int k, int n){
 
 /* Crie um programa em C que receba um vetor de números reais com 100 elementos. Escreva uma função recursiva que
 inverta ordem dos elementos presentes no vetor. */
-double inverteVetor(double vet[], int n){
-	if(n == 1){
-		return vet[0];
-	}
+float inverteVetor(float vet[], int n){
 	int aux;
-	aux = inverteVetor(vet, n - 1); 
-	vet[0] = vet[n + 1];
-	vet[n + 1] = aux;
+	if(n % 2 == 0){
+		aux = 0;
+	}
+	else{
+		aux = -1;
+	}
+	float interna(float vet[], int n, int i){
+		if(n == i){
+			return vet[n];
+		}
+		float aux;
+		interna(vet, n - 1, i + 1);
+		aux = vet[n-1];
+		vet[n-1] = vet[i+1];
+		vet[i+1] = aux;
+	}
+	return(interna(vet, n, aux));
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -118,8 +129,7 @@ int multRec(int a, int b){
 	if(b == 1){
 		return a;
 	}
-	int acc;
-	acc = a + multRec(a, b - 1);
+	return a + multRec(a, b - 1);
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -130,14 +140,13 @@ int retNaturais(int n){
 	if(n == -1){
 		return 0;               
 	}	
-	int acc;
-	acc = 1 + retNaturais(n - 1);
+	1 + retNaturais(n - 1);
 	printf("%d ", n);	
 }
 
-int inverteSigRetNaturais(int n){
+int retNaturaisSig(int n){
 	if(n < 0){
-		return -1 * retNaturais(n * -1);
+		return retNaturais(n * -1);
 	}
 	return retNaturais(n);
 }	
@@ -145,14 +154,38 @@ int inverteSigRetNaturais(int n){
 
 /* Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 
 0 até N em ordem decrescente */
-int retNaturaisDec(int){
+int retNaturaisDec(int n){
 	if(n == -1){
-		exit(0);
+		return 0;
 	}
-	printf("%d ", retNaturaisDec(n - 1));
+	printf("%d ", n);
+	retNaturaisDec(n - 1);
 }
 
+int retNaturaisDecSig(int n){
+	if(n < 0){
+		return retNaturaisDec(n * -1);
+	}
+	return retNaturaisDec(n);
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares 
+de 0 até N em ordem crescente. */
+int retSeqPar(int n){
+	if(n < 0){
+		return 0;
+	}
+	2 + retSeqPar(n - 2);
+	printf("%d ", n);
+}
+
+int retSeqParSig(int n){
+	if(n < 0){
+		return -1 * retSeqPar(n);
+	}
+	return retSeqPar(n);
+}
 
 
 
