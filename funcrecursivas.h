@@ -32,5 +32,9 @@ int retSeqParSig(int n);
 int retSeqParDec(int n);
 int retSeqParDecSig(int n);
 
+int fatDuplo(int n);
+
+
+
 
 

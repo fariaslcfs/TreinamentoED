@@ -84,10 +84,11 @@ int main(int argc, char *argv[]){
 	printf("\nA SEQUENCIA PARES RECURSIVA DE %d ATE 0 EH:\n", n);
 	retSeqParDecSig(n);
 	
+	printf("\n\nFATORIAL DUPLO DE n IMPAR\nDIGITE UM NATURAL IMPAR\n");
+	scanf("%d", &n);
+	printf("\nO FATORIAL DUPLO DE %d EH:\n%d", n, fatDuplo(n));
 	                       
 	return 0;
-	
-	
 	
 	
 }
