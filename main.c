@@ -79,6 +79,11 @@ int main(int argc, char *argv[]){
 	printf("\nA SEQUENCIA PARES RECURSIVA DE 0 ATE %d EH:\n", n);
 	retSeqParSig(n);
 	
+	printf("\nSEQUENCIA NATURAIS PARES DECRESCENTE\nDIGITE UM INTEIRO\n");
+	scanf("%d", &n);
+	printf("\nA SEQUENCIA PARES RECURSIVA DE %d ATE 0 EH:\n", n);
+	retSeqParDecSig(n);
+	
 	                       
 	return 0;
 	

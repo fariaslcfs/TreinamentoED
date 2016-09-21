@@ -29,3 +29,8 @@ int retNaturaisDecSig(int n);
 int retSeqPar(int n);
 int retSeqParSig(int n);
 
+int retSeqParDec(int n);
+int retSeqParDecSig(int n);
+
+
+
