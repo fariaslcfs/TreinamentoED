@@ -88,6 +88,10 @@ int main(int argc, char *argv[]){
 	scanf("%d", &n);
 	printf("\nO FATORIAL DUPLO DE %d EH:\n%d", n, fatDuplo(n));
 	                       
+	printf("\n\nFATORIAL QUADRUPLO DE n\nDIGITE UM NATURAL\n");
+	scanf("%d", &n);
+	printf("\nO FATORIAL QUADRUPLO DE %d EH:\n%d", n, fatQuadruplo(n));
+
 	return 0;
 	
 	

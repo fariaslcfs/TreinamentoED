@@ -216,14 +216,28 @@ int fatDuplo(int n){
 		return 1;
 	}
 	if(n % 2 == 0){
-		exit(0);
+		return 0;
 	}
 	return n * fatDuplo(n - 2);	
 }
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* O fatorial quádruplo de um número N é dado por (2n)!/n! Faça uma função recursiva que receba um número 
+inteiro positivo N e retorne o fatorial quádruplo desse número. */
+int fatQuadruplo(int n){
+	int interna(int n, int k){
+		if(n == k){
+			return  k;
+		}
+		n = n * interna(n - 1, k);
+	}
+	return interna(2 * n, n + 1);	
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
-
-
+/* O superfatorial de um número N é definida pelo produto dos N primeiros fatoriais de N. Assim, o superfatorial de 4 é
+sf(4) = 1! * 2! * 3! * 4! = 288. Faça uma função recursiva que receba um número inteiro positivo N e retorne o superfatorial 
+desse número. */
 
 
 

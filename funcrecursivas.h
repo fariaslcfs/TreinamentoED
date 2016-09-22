@@ -34,6 +34,7 @@ int retSeqParDecSig(int n);
 
 int fatDuplo(int n);
 
+int fatQuadruplo(int n);
 
 
 
