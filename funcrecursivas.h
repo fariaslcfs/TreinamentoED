@@ -40,5 +40,4 @@ int superFat(int n);
 
 long int hiperFat(int n);
 
-
-
+long unsigned int fatExp(int n);

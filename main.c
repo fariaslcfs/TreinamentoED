@@ -104,7 +104,9 @@ int main(int argc, char *argv[]){
 	scanf("%d",&n);
 	printf("\n O HIPERFATORIAL DE %d EH: \n%d", n, hiperFat(n));
 	
-
+	printf("\n\nFATORIAL EXPONENCIAL DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\n O FATORIAL EXPONENCIAL DE %d EH: \n%d", n, fatExp(n));
 
 
 	return 0;

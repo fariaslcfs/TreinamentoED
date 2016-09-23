@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-/* Ex1_fatorial.c --> Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N. */
+/* Ex1 --> Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N. */
 int fatorial(int n){
 	if(n < 2) {
 		return 1;
@@ -11,7 +11,7 @@ int fatorial(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Ex2- Faça uma função recursiva que calcule e retorne o N-ésimo termo da sequência Fibonacci. 
+/* Ex2 --> Faça uma função recursiva que calcule e retorne o N-ésimo termo da sequência Fibonacci. 
         Alguns números desta sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...        */
 int fibonacci(int n){
 	if(n == 0){
@@ -27,7 +27,7 @@ int fibonacci(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/*  Faça uma função recursiva que permita inverter um número inteiro N. Ex: 123 - 321 */
+/* Ex3 --> Faça uma função recursiva que permita inverter um número inteiro N. Ex: 123 - 321 */
 int inverte(int n){
 	if((n / 10) == 0){
 		return n;
@@ -43,7 +43,7 @@ int inverteSig(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Faça uma função recursiva que permita somar os elementos de um vetor de inteiros. */
+/* Ex4 --> Faça uma função recursiva que permita somar os elementos de um vetor de inteiros. */
 int somaVetor(int vet[], int n){
 	if(n == 1){
 		return vet[0];
@@ -52,7 +52,7 @@ int somaVetor(int vet[], int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N */
+/* Ex5 --> Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N */
 int soma1aN(int n){
 	if(n == 1){
 		return 1;
@@ -61,7 +61,7 @@ int soma1aN(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Crie um programa em C, que contenha uma função recursiva que receba dois inteiros positivos k e n e calcule kn. 
+/* Ex6 --> Crie um programa em C, que contenha uma função recursiva que receba dois inteiros positivos k e n e calcule kn. 
 Utilize apenas multiplicações. O programa principal deve solicitar ao usuário os valores de k e n e imprimir o resultado
 da chamada da função. */	
 int potenciakn(int k, int n){
@@ -72,7 +72,7 @@ int potenciakn(int k, int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Crie um programa em C que receba um vetor de números reais com 100 elementos. Escreva uma função recursiva que
+/* Ex7 --> Crie um programa em C que receba um vetor de números reais com 100 elementos. Escreva uma função recursiva que
 inverta ordem dos elementos presentes no vetor. */
 float inverteVetor(float vet[], int n){
 	int aux;
@@ -96,7 +96,7 @@ float inverteVetor(float vet[], int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y. Escreva uma função recursiva mdc em C, 
+/* Ex8 --> máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y. Escreva uma função recursiva mdc em C, 
 que retorna o máximo divisor comum de x e y. O mdc de x e y é definido como segue: se y é igual a 0, então mdc(x,y) é x; 
 caso contrário, mdc(x,y) é mdc (y, x%y), onde % é o operador resto.*/
 int maxDivCom(int a, int b){
@@ -107,7 +107,7 @@ int maxDivCom(int a, int b){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um número natural N. 
+/* Ex9 --> Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um número natural N. 
 Por exemplo, o dígito 2 ocorre 3 vezes em 762021192 */
 int sumMatches(int n, int k, int i){
 	if(n % 10 == k){
@@ -120,7 +120,7 @@ int sumMatches(int n, int k, int i){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* A multiplicação de dois números inteiros pode ser feita através de somas sucessivas. Proponha um algoritmo recursivo
+/* Ex10 --> A multiplicação de dois números inteiros pode ser feita através de somas sucessivas. Proponha um algoritmo recursivo
 Multip_Rec(n1,n2) que calcule a multiplicação de dois inteiros */
 int multRec(int a, int b){
 	if(a == 0 || b == 0){
@@ -133,7 +133,7 @@ int multRec(int a, int b){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 
+/* Ex11 --> Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 
 até N em ordem crescente. */
 
 int retNaturais(int n){
@@ -152,7 +152,7 @@ int retNaturaisSig(int n){
 }	
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 
+/* Ex12 --> Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 
 0 até N em ordem decrescente */
 int retNaturaisDec(int n){
 	if(n == -1){
@@ -170,7 +170,7 @@ int retNaturaisDecSig(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares 
+/* Ex13 --> Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares 
 de 0 até N em ordem crescente. */
 int retSeqPar(int n){
 	if(n < 0){
@@ -188,7 +188,7 @@ int retSeqParSig(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares
+/* Ex14 --> Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares
 de 0 até N em ordem decrescente. */
 int retSeqParDec(int n){
 	if(n == 0){
@@ -208,7 +208,7 @@ int retSeqParDecSig(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* A função fatorial duplo é definida como o produto de todos os números naturais ímpares de 1 até algum
+/* Ex15 --> A função fatorial duplo é definida como o produto de todos os números naturais ímpares de 1 até algum
 número natural ímpar N. Assim, o fatorial duplo de 5 é 5!! = 1 * 3 * 5 = 15 */
 
 int fatDuplo(int n){
@@ -222,7 +222,7 @@ int fatDuplo(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* O fatorial quádruplo de um número N é dado por (2n)!/n! Faça uma função recursiva que receba um número 
+/* Ex16 --> O fatorial quádruplo de um número N é dado por (2n)!/n! Faça uma função recursiva que receba um número 
 inteiro positivo N e retorne o fatorial quádruplo desse número. */
 int fatQuadruplo(int n){
 	int interna(int n, int k){
@@ -235,7 +235,7 @@ int fatQuadruplo(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* O superfatorial de um número N é definida pelo produto dos N primeiros fatoriais de N. Assim, o superfatorial de 4 é
+/* Ex17 --> O superfatorial de um número N é definida pelo produto dos N primeiros fatoriais de N. Assim, o superfatorial de 4 é
 sf(4) = 1! * 2! * 3! * 4! = 288. Faça uma função recursiva que receba um número inteiro positivo N e retorne o superfatorial 
 desse número. */
 int superFat(int n){
@@ -253,7 +253,7 @@ int superFat(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* O hiperfatorial de um número N, escrito H(n), é definido por H(n) = 1^1 * 2^2 * ... * (n - 1)^ n - 1 * n^n
+/* Ex18 --> O hiperfatorial de um número N, escrito H(n), é definido por H(n) = 1^1 * 2^2 * ... * (n - 1)^ n - 1 * n^n
 Faça uma função recursiva que receba um número inteiro positivo N e retorne o hiperfatorial desse número. */
 long int hiperFat(int n){
 	if(n == 1 || n == 0){
@@ -268,11 +268,33 @@ long int hiperFat(int n){
 	
 	return interna(n, n) * hiperFat(n - 1);
 }
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* Ex10 --> Um fatorial exponencial é um inteiro positivo N elevado à potência de N-1, que por sua vez é elevado
+à potência de N-2 e assim em diante. Ou seja, n ^ (n - 1) ^ (n - 2) ^ ...^ 1. Faça uma função recursiva que receba
+um número inteiro positivo N e retorne o fatorial exponencial desse número.*/
 
-
-
-
+long unsigned int fatExp(int n){
+	if(n == 0){
+		exit(0);
+	}
+	if(n == 1){
+		return 1;
+	}
+	long unsigned int interna(int n, int k){
+		if(k == 1){
+			return n;
+		}
+		return n * interna(n, k - 1);
+	}
+	fatExp(n - 1) * interna(n, n - 1);
+	FALTA ALGO AINDA..
+}
+	
+	
+	
+	
+	
 
 
 
