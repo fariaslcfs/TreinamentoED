@@ -36,6 +36,7 @@ int fatDuplo(int n);
 
 int fatQuadruplo(int n);
 
+int superFat(int n);
 
 
 

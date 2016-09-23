@@ -9,6 +9,8 @@ int main(int argc, char *argv[]){
 
 	int i, n, k;
 	
+	/*
+	
 	printf("\nFATORIAL DE n: \nINSIRA UM NUMERO INTEIRO: \n");
 	scanf("%d",&n);
 	printf("O FATORIAL DE %d EH: %d\n\n", n, fatorial(n));
@@ -91,8 +93,20 @@ int main(int argc, char *argv[]){
 	printf("\n\nFATORIAL QUADRUPLO DE n\nDIGITE UM NATURAL\n");
 	scanf("%d", &n);
 	printf("\nO FATORIAL QUADRUPLO DE %d EH:\n%d", n, fatQuadruplo(n));
+	
+	*/
+	
+	printf("\n\nSUPERFATORIAL DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\n O SUPERFATORIAL DE %d EH: \n%d", n, superFat(n));
+
+
+
 
 	return 0;
 	
+
+
+
 	
 }
