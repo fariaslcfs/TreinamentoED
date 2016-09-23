@@ -38,5 +38,7 @@ int fatQuadruplo(int n);
 
 int superFat(int n);
 
+long int hiperFat(int n);
+
 
 

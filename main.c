@@ -100,6 +100,10 @@ int main(int argc, char *argv[]){
 	scanf("%d",&n);
 	printf("\n O SUPERFATORIAL DE %d EH: \n%d", n, superFat(n));
 
+	printf("\n\nHIPERFATORIAL DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\n O HIPERFATORIAL DE %d EH: \n%d", n, hiperFat(n));
+	
 
 
 
