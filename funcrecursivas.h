@@ -43,3 +43,13 @@ int hiperFat(int n);
 unsigned int Exp(int n);
 
 int tribonacci(int n);
+
+int tetranacci(int n);
+
+int padovan(int n);
+
+int pell(int n);
+
+int catalan(int n);
+
+char palaFibonacci(int n);

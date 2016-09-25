@@ -89,9 +89,7 @@ int main(int argc, char *argv[]){
 	printf("\n\nFATORIAL DUPLO DE n IMPAR\nDIGITE UM NATURAL IMPAR\n");
 	scanf("%d", &n);
 	printf("\nO FATORIAL DUPLO DE %d EH:\n%d", n, fatDuplo(n));
-	
-	*/
-	                       
+            
 	printf("\n\nFATORIAL QUADRUPLO DE n\nDIGITE UM NATURAL\n");
 	scanf("%d", &n);
 	printf("\nO FATORIAL QUADRUPLO DE %d EH:\n%d", n, fatQuadruplo(n));
@@ -111,6 +109,30 @@ int main(int argc, char *argv[]){
 	printf("\n\nTRIBONACCI DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
 	printf("\nTRIBONACCI DE %d EH: \n%d", n, tribonacci(n));
+	
+	printf("\n\nTETRABONACCI DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\nTETRANACCI DE %d EH: \n%d", n, tetranacci(n));
+
+	printf("\n\nPADOVAN DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\nPADOVAN DE %d EH: \n%d", n, padovan(n));
+	
+	printf("\n\nPELL DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\nPELL DE %d EH: \n%d", n, pell(n));
+
+	printf("\n\nCATALAN DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\nCATALAN DE %d EH: \n%d", n, catalan(n));
+	
+	*/
+	
+
+	printf("\n\nPALAVRA FIBONACCI DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\nPALAVRA FIBONACCI DE %d EH: \n", n);
+	palaFibonacci(n);
 
 	return 0;
 

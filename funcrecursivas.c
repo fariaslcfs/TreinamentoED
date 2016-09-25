@@ -289,9 +289,9 @@ unsigned int fatExp(int n){
 	}
 	return interna(n, n - 1);
  }
-/*----------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------*/
 
-/* Os números tribonacci são definidos pela seguinte recursão: 
+/* Ex20 --> Os números tribonacci são definidos pela seguinte recursão: 
 F(n) = 0 se n = 0; F(n) = 0 se n = 1; F(n) = 1 se n = 2; F(n) = F(n - 1) + F(n - 1) + F(n - 3) se n > 2
 Faça uma função recursiva que receba um número N 
 e retorne o N-ésimo termo da sequência de tribonacci. */
@@ -308,8 +308,80 @@ int tribonacci(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
+/* Ex21 --> Os números tetranacci iniciam com quatro termos pré-determinados e a partir daí todos os demais números são
+obtidos pela soma dos quatro números anteriores. Os primeiros números tetranacci são: 
+0, 0, 0, 1, 1, 2, 4, 8, 15, 29, 56, 108, 208... Faça uma função recursiva que receba um número N e retorne o 
+N-ésimo termo da sequência de tetranacci. */
+int tetranacci(int n){
+	if(n == 0 || n == 1 || n == 2){
+		return 0;
+	}
+	if(n == 3){
+		return 1;
+	}
+	return tetranacci(n - 1) + tetranacci(n - 2) + tetranacci(n - 3) + tetranacci(n - 4);
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* Ex22 -->  A sequência de Padovan é uma sequência de naturais P(n) definida pelos valores iniciais
+P(0) = P(1) = p(2) = 1 e a seguinte relação recursiva: P(n) = P(n - 2) + P(n - 3) se n > 2
+Alguns valores da sequência são: 1, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12, 16, 21, 28...
+Faça uma função recursiva que receba um número N e retorne o N-ésimo termo da sequência de Padovan. */
+int padovan(int n){
+	if(n == 0 || n == 1 || n == 2){
+		return 1;
+	}
+	return padovan(n - 2) + padovan(n - 3);
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* Ex23 --> Os números de Pell são definidos pela seguinte recursão: P(n) = 0 se n = 0; P(n) = 1 se n = 1;
+P(n) = 2P(n - 1) + P(n - 2) Alguns números desta sequência são: 0, 1, 2, 5, 12, 29, 70, 169, 408, 985...
+Faça uma função recursiva que receba um número N e retorne o N-ésimo número de Pell.*/
+
+int pell(int n){
+	if(n == 0){
+		return 0;
+	}
+	if(n == 1){
+		return 1;
+	}
+	return 2 * pell(n - 1) + pell(n - 2);
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* Ex24 --> Os números de Catalan são definidos pela seguinte recursão: C(n) = 1 se n = 0; 2(2n - 1)C(n - 1)/n + 1 se n > 0
+Alguns números desta sequência são: 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786...
+Faça uma função recursiva que receba um número N e retorne o N-ésimo número de Catalan. */
+int catalan(int n){
+	if(n == 0){
+		return 1;
+	}
+	return 2 * (2 * n - 1) * catalan(n - 1) / (n + 1);
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* Ex25 --> Uma palavra de Fibonacci é definida por  f(n) = b se n = 0; f(n) = a se n = 1; f(n - 1) + f(n - 2)
+Aqui + denota a concatenação de duas strings. Esta sequência inicia com as seguintes palavras:
+b, a, ab, aba, abaab, abaababa, abaababaabaab, ...  Faça uma função recursiva que receba um número N e
+retorne a N-ésima palavra de Fibonacci.*/
+char palaFibonacci(int n){
+	int fiboInterna(int n){
+		if(n == 0 || n == 1){
+			return 1;
+		}
+		return fiboInterna(n - 1) + fiboInterna(n - 2);
+	}
+	if(n == 0){
+		return 'b';
+	}
+	if(n == 1){
+		return 'a';
+	}
+	printf("%c ",palaFibonacci(n - 1) + palaFibonacci(n - 2));
+	
+}
+/*----------------------------------------------------------------------------------------------------------*/
 
  
  
