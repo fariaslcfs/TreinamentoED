@@ -38,6 +38,8 @@ int fatQuadruplo(int n);
 
 int superFat(int n);
 
-long int hiperFat(int n);
+int hiperFat(int n);
 
-long unsigned int fatExp(int n);
+unsigned int Exp(int n);
+
+int tribonacci(int n);

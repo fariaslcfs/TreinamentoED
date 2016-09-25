@@ -89,28 +89,30 @@ int main(int argc, char *argv[]){
 	printf("\n\nFATORIAL DUPLO DE n IMPAR\nDIGITE UM NATURAL IMPAR\n");
 	scanf("%d", &n);
 	printf("\nO FATORIAL DUPLO DE %d EH:\n%d", n, fatDuplo(n));
+	
+	*/
 	                       
 	printf("\n\nFATORIAL QUADRUPLO DE n\nDIGITE UM NATURAL\n");
 	scanf("%d", &n);
 	printf("\nO FATORIAL QUADRUPLO DE %d EH:\n%d", n, fatQuadruplo(n));
 	
-	*/
-	
 	printf("\n\nSUPERFATORIAL DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
-	printf("\n O SUPERFATORIAL DE %d EH: \n%d", n, superFat(n));
+	printf("\nO SUPERFATORIAL DE %d EH: \n%d", n, superFat(n));
 
 	printf("\n\nHIPERFATORIAL DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
-	printf("\n O HIPERFATORIAL DE %d EH: \n%d", n, hiperFat(n));
+	printf("\nO HIPERFATORIAL DE %d EH: \n%d", n, hiperFat(n));
 	
 	printf("\n\nFATORIAL EXPONENCIAL DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
-	printf("\n O FATORIAL EXPONENCIAL DE %d EH: \n%d", n, fatExp(n));
-
+	printf("\nO FATORIAL EXPONENCIAL DE %d EH: \n%d", n, fatExp(n));
+	
+	printf("\n\nTRIBONACCI DE n NATURAL\nDIGITE UM NATURAL\n");
+	scanf("%d",&n);
+	printf("\nTRIBONACCI DE %d EH: \n%d", n, tribonacci(n));
 
 	return 0;
-	
 
 
 

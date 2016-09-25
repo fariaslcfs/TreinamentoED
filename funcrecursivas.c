@@ -229,7 +229,7 @@ int fatQuadruplo(int n){
 		if(n == k){
 			return  k;
 		}
-		n = n * interna(n - 1, k);
+		return n * interna(n - 1, k);
 	}
 	return interna(2 * n, n + 1);	
 }
@@ -270,30 +270,74 @@ long int hiperFat(int n){
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* Ex10 --> Um fatorial exponencial é um inteiro positivo N elevado à potência de N-1, que por sua vez é elevado
+/* Ex19 --> Um fatorial exponencial é um inteiro positivo N elevado à potência de N-1, que por sua vez é elevado
 à potência de N-2 e assim em diante. Ou seja, n ^ (n - 1) ^ (n - 2) ^ ...^ 1. Faça uma função recursiva que receba
 um número inteiro positivo N e retorne o fatorial exponencial desse número.*/
 
-long unsigned int fatExp(int n){
+unsigned int fatExp(int n){
 	if(n == 0){
 		exit(0);
 	}
-	if(n == 1){
-		return 1;
-	}
-	long unsigned int interna(int n, int k){
+	if(n == 1 || n == 2){
+		return n;
+	}	
+	unsigned int interna(int n, int k){
 		if(k == 1){
-			return n;
+			 return n;
 		}
-		return n * interna(n, k - 1);
+		return interna(n * interna(n, k - 1), k - 1);
 	}
-	fatExp(n - 1) * interna(n, n - 1);
-	FALTA ALGO AINDA..
+	return interna(n, n - 1);
+ }
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* Os números tribonacci são definidos pela seguinte recursão: 
+F(n) = 0 se n = 0; F(n) = 0 se n = 1; F(n) = 1 se n = 2; F(n) = F(n - 1) + F(n - 1) + F(n - 3) se n > 2
+Faça uma função recursiva que receba um número N 
+e retorne o N-ésimo termo da sequência de tribonacci. */
+
+int tribonacci(int n){
+	if(n == 0 || n == 1){
+		return 0;
+	}
+	if(n == 2){
+		return 1;
+		
+	}
+	return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3);
 }
-	
-	
-	
-	
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 	
 
 
