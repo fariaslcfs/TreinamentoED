@@ -46,7 +46,7 @@ LeftChar=1
 [Editor_1]
 CursorCol=12
 CursorRow=102
-TopLine=92
+TopLine=88
 LeftChar=1
 [Editor_3]
 CursorCol=1
@@ -59,5 +59,5 @@ Focused=1
 [Editor_0]
 CursorCol=63
 CursorRow=53
-TopLine=32
+TopLine=21
 LeftChar=1
