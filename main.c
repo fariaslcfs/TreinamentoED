@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
 #include "funcrecursivas.h"
 
@@ -125,18 +126,15 @@ int main(int argc, char *argv[]){
 	printf("\n\nCATALAN DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
 	printf("\nCATALAN DE %d EH: \n%d", n, catalan(n));
-	
-	*/
-	
 
 	printf("\n\nPALAVRA FIBONACCI DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
 	printf("\nPALAVRA FIBONACCI DE %d EH: \n", n);
-	palaFibonacci(n);
-
-	return 0;
-
-
-
 	
+	
+	*/
+	
+	printf("%s",palaFibonacci(2));
+	
+		
 }

@@ -52,4 +52,4 @@ int pell(int n);
 
 int catalan(int n);
 
-char palaFibonacci(int n);
+char * palaFibonacci(int n);

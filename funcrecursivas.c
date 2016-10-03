@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
 
 /* Ex1 --> Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N. */
@@ -365,21 +366,14 @@ int catalan(int n){
 Aqui + denota a concatenação de duas strings. Esta sequência inicia com as seguintes palavras:
 b, a, ab, aba, abaab, abaababa, abaababaabaab, ...  Faça uma função recursiva que receba um número N e
 retorne a N-ésima palavra de Fibonacci.*/
-char palaFibonacci(int n){
-	int fiboInterna(int n){
-		if(n == 0 || n == 1){
-			return 1;
-		}
-		return fiboInterna(n - 1) + fiboInterna(n - 2);
-	}
-	if(n == 0){
-		return 'b';
-	}
-	if(n == 1){
-		return 'a';
-	}
-	printf("%c ",palaFibonacci(n - 1) + palaFibonacci(n - 2));
+char * palaFibonacci(int n){
 	
+	char * str1 = "a";
+	char * str2 = "b";
+	char res[] = "";
+
+	return str1;
+
 }
 /*----------------------------------------------------------------------------------------------------------*/
 
