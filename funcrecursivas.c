@@ -15,13 +15,7 @@ int fatorial(int n){
 /* Ex2 --> Faça uma função recursiva que calcule e retorne o N-ésimo termo da sequência Fibonacci. 
         Alguns números desta sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...        */
 int fibonacci(int n){
-	if(n == 0){
-		exit(0);
-	}
-	if(n == 1){
-		return 0;
-	}
-	else if (n == 2){
+	if(n < 2){
 		return 1;
 	}
 	return fibonacci(n - 1) + fibonacci(n - 2);
@@ -367,13 +361,24 @@ Aqui + denota a concatenação de duas strings. Esta sequência inicia com as segui
 b, a, ab, aba, abaab, abaababa, abaababaabaab, ...  Faça uma função recursiva que receba um número N e
 retorne a N-ésima palavra de Fibonacci.*/
 char * palaFibonacci(int n){
+
+	char * interna(int n, char * v){
+		printf("%d ",n);
+		if(n == 0){
+			v[n] = 'b';
+			return v;
+		}
+		if(n == 1){
+			printf("entrou");
+			v[n] = 'a';
+			printf("%c",v[n]);
+		}
+		return interna(n - 1, v);
+	}
 	
-	char * str1 = "a";
-	char * str2 = "b";
-	char res[] = "";
-
-	return str1;
-
+	int t = fibonacci(n);
+	char  * v = "";
+	interna(t, v);
 }
 /*----------------------------------------------------------------------------------------------------------*/
 

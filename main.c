@@ -134,7 +134,9 @@ int main(int argc, char *argv[]){
 	
 	*/
 	
-	printf("%s",palaFibonacci(2));
+	
+	
+	printf("%s",palaFibonacci(6));
 	
 		
 }
