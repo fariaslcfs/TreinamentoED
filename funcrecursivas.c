@@ -362,24 +362,28 @@ b, a, ab, aba, abaab, abaababa, abaababaabaab, ...  Faça uma função recursiva qu
 retorne a N-ésima palavra de Fibonacci.*/
 char * palaFibonacci(int n){
 
-	char * interna(int n, char * v){
-		printf("%d ",n);
-		if(n == 0){
-			v[n] = 'b';
-			return v;
-		}
-		if(n == 1){
-			printf("entrou");
-			v[n] = 'a';
-			printf("%c",v[n]);
-		}
-		return interna(n - 1, v);
+	char * interna(int n, char * menos1, char * menos2){
+		printf("%d\n",n);
+		
+		if(n == 0) return menos2;
+		if(n == 1) return menos1;
+		
+	    int tamMenos1 = sizeof(menos1);
+		int tamMenos2 = sizeof(menos2);
+		
+		char aux[tamMenos1];
+		strcpy(aux,menos1);
+		
+		char auxMenos1[tamMenos1 + tamMenos2 + 2];
+		strcpy(auxMenos1,menos1);
+		strcat(auxMenos1,menos2);
+
+		return interna(n - 1, auxMenos1, aux);
 	}
-	
-	int t = fibonacci(n);
-	char  * v = "";
-	interna(t, v);
+
+	return interna(n, "a", "b");
 }
+
 /*----------------------------------------------------------------------------------------------------------*/
 
  
