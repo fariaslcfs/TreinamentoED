@@ -363,25 +363,24 @@ retorne a N-ésima palavra de Fibonacci.*/
 char * palaFibonacci(int n){
 
 	char * interna(int n, char * menos1, char * menos2){
-		printf("%d\n",n);
-		
 		if(n == 0) return menos2;
 		if(n == 1) return menos1;
 		
-	    int tamMenos1 = sizeof(menos1);
-		int tamMenos2 = sizeof(menos2);
+	    int tamMenos1 = strlen(menos1);
+		int tamMenos2 = strlen(menos2);
 		
 		char aux[tamMenos1];
 		strcpy(aux,menos1);
 		
-		char auxMenos1[tamMenos1 + tamMenos2 + 2];
+		char auxMenos1[tamMenos1 + tamMenos2 + 1];
 		strcpy(auxMenos1,menos1);
 		strcat(auxMenos1,menos2);
 
 		return interna(n - 1, auxMenos1, aux);
 	}
-
-	return interna(n, "a", "b");
+	
+	char * a = "a"; char * b = "b";
+	return interna(n, a, b);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
