@@ -385,6 +385,19 @@ char * palaFibonacci(int n){
 
 /*----------------------------------------------------------------------------------------------------------*/
 
+/* Ex26 --> Desenvolva algoritmos recursivos para cada um dos seguintes problemas:
+a)Impressão de um número natural em base binaria
+b)Multiplicação de dois números naturais através de somas consecutivas.
+c)Inversão de uma string.
+d)Gerador da sequencia:
+   (a) F(1)=1
+   (b) F(2)=2
+   (c) F(n)= 2*F(n-1)+3*F(n-2) <= fórmula Geral Usando a formula podemos identificar que F(3)=2*F(2)+3*F(1) F(3)=4+3=7
+(e)Verificar se uma palavra é palíndromo
+(f)Busca sequencial em um veto desordenado que retorna a posição da primeira ocorrência de um elemento procurado
+usando uma estratégia similar a da busca binaria. Dica: Se não é o elemento do meio, procure dos dois lados e retorne
+o menor dos índices encontrados. Se for o elemento do meio, continue a busca apenas do lado esquerdo, retornando a 
+posição de lá se encontrar e o meio senão encontrar*/ 
  
  
  
