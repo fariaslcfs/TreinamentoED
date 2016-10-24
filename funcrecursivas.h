@@ -53,3 +53,7 @@ int pell(int n);
 int catalan(int n);
 
 char * palaFibonacci(int n);
+
+int * binario(int n);
+
+

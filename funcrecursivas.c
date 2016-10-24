@@ -363,22 +363,21 @@ retorne a N-ésima palavra de Fibonacci.*/
 char * palaFibonacci(int n){
 
 	char * interna(int n, char * menos1, char * menos2){
-		if(n == 0) return menos2;
-		if(n == 1) return menos1;
-		
-	    int tamMenos1 = strlen(menos1);
+		if(n == 0){
+			return menos2;
+		} 
+		if(n == 1){
+			return menos1;	
+		} 
+	    int tamMenos1 = strlen(menos1); 
 		int tamMenos2 = strlen(menos2);
-		
 		char aux[tamMenos1];
 		strcpy(aux,menos1);
-		
 		char auxMenos1[tamMenos1 + tamMenos2 + 1];
 		strcpy(auxMenos1,menos1);
 		strcat(auxMenos1,menos2);
-
 		return interna(n - 1, auxMenos1, aux);
 	}
-	
 	char * a = "a"; char * b = "b";
 	return interna(n, a, b);
 }
@@ -399,19 +398,34 @@ usando uma estratégia similar a da busca binaria. Dica: Se não é o elemento do m
 o menor dos índices encontrados. Se for o elemento do meio, continue a busca apenas do lado esquerdo, retornando a 
 posição de lá se encontrar e o meio senão encontrar*/ 
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+/* a) */ 
+void binario(int n){
+	int nBits = 1;
+	int m = n;
+	while(m > 1){    /* Calcula quantidade de bits do numero n*/
+		nBits++;
+		m /= 2;
+	}
+	
+	int * interna(int n, int i, int * vet){
+		if(n < 2){
+			vet[i] = n;
+			return vet;
+		} 
+		vet[i] = (n % 2);
+		return interna(n / 2, i + 1, vet);
+	}
+	
+	int i = 0;
+	int v[nBits];
+	int * vetor = interna(n, i, v);
+	
+	int j;
+	for(j = 0; j < nBits; j++){
+		
+	}
+}
+
  
  
  

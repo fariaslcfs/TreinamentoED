@@ -126,17 +126,19 @@ int main(int argc, char *argv[]){
 	printf("\n\nCATALAN DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
 	printf("\nCATALAN DE %d EH: \n%d", n, catalan(n));
-
-	*/
 	
 	printf("\nPALAVRA FIBONACCI DE n NATURAL\nDIGITE UM NATURAL\n");
 	scanf("%d",&n);
 	printf("\nPALAVRA FIBONACCI DE %d EH: \n", n);
 	printf("%s\n",palaFibonacci(n));
 	
+	*/	
+
+	printf("\nAPRESENTA NATURAL n EM BINARIO\n");
+	scanf("%d",&n);
+	printf("\nBINARIO DE %d EH: \n", n);
 	
-
-
+	binario(n);
 			
 	
 	
