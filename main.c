@@ -154,7 +154,17 @@ int main(int argc, char *argv[]){
 	printf("\nO %dTH DA SEQUENCIA EH: %d\n", n, sequencia(n)); 	
 	
 	*/		
-	
+
+	printf("\n     TESTE PALINDROMOn\n");
+	printf("INSIRA STRING: \n");
+	scanf("%s",&str); 
+	if(palindromo(str) == 1){
+		printf("%s EH PALINDROMO", str);
+	}
+	if(palindromo(str) == 0){
+		printf("%s NAO EH PALINDROMO", str);
+	}
+
 		
 		
 		
