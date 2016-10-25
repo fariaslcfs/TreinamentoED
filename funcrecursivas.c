@@ -464,18 +464,18 @@ int sequencia(int n){
 int palindromo(char * str){
 	int interna(char * s, char * aux, int i, int tam, int teste){
 		if(tam == -1){
+			if(teste > 0) return 1;
 			return teste;
 		}
 		aux[i] = s[tam];
-		printf("%c  %c\n", aux[i], s[tam]);
-		if(aux[i] != s[tam]){
+		if(aux[i] != s[i]){
 			teste++;
 		}
-		interna(s, aux, i + 1, tam - 1, 0);
+		interna(s, aux, i + 1, tam - 1, teste);
 	}
 	int t = strlen(str) - 1;
 	char strAux[t + 1];
-	return interna(str, strAux, 0, t, 0);
+	interna(str, strAux, 0, t, 0);
 } 
  
  

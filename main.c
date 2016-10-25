@@ -9,7 +9,7 @@
 int main(int argc, char *argv[]){
 
 	int a, b, i, n, k;
-	char str[] = "";
+	static char str[] = "";
 	
 	/*
 	
@@ -157,15 +157,13 @@ int main(int argc, char *argv[]){
 
 	printf("\n     TESTE PALINDROMOn\n");
 	printf("INSIRA STRING: \n");
-	scanf("%s",&str); 
-	if(palindromo(str) == 1){
-		printf("%s EH PALINDROMO", str);
-	}
-	if(palindromo(str) == 0){
+	scanf("%s",str);
+	int teste = palindromo(str);
+	if(teste == 1){
 		printf("%s NAO EH PALINDROMO", str);
 	}
-
-		
-		
+	if(teste == 0){
+		printf("%s EH PALINDROMO", str);
+	}
 		
 }
