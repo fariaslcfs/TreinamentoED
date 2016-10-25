@@ -57,3 +57,5 @@ char * palaFibonacci(int n);
 void binario(int n);
 
 int multSomas(int a, int b);
+
+void inverteString(char * str);

@@ -39,15 +39,15 @@ CursorRow=1
 TopLine=1
 LeftChar=1
 [Editor_2]
-CursorCol=9
-CursorRow=59
-TopLine=40
+CursorCol=7
+CursorRow=61
+TopLine=7
 LeftChar=1
 [Editor_1]
 <<<<<<< HEAD
-CursorCol=5
-CursorRow=430
-TopLine=424
+CursorCol=14
+CursorRow=453
+TopLine=419
 =======
 <<<<<<< HEAD
 CursorCol=42
@@ -70,9 +70,9 @@ Order=0,1,2
 Focused=1
 [Editor_0]
 <<<<<<< HEAD
-CursorCol=69
-CursorRow=145
-TopLine=129
+CursorCol=30
+CursorRow=148
+TopLine=109
 =======
 <<<<<<< HEAD
 CursorCol=1

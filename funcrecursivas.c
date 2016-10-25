@@ -438,7 +438,21 @@ int multSomas(int a, int b){
 	return interna(a, a, b);
 	
 }
-	
+
+/* c) */
+void inverteString(char * str){
+	char * interna(char * s, char * aux, int i, int tam){
+		if(tam == -1){
+			return aux;
+		}
+		aux[i] = s[tam];
+		interna(s, aux, i + 1, tam - 1);
+	}
+	int t = strlen(str) - 1;
+	char strAux[t + 1];
+	printf("%s",interna(str, strAux, 0, t));
+}	
+
  
  
  

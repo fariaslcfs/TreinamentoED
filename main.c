@@ -9,6 +9,7 @@
 int main(int argc, char *argv[]){
 
 	int a, b, i, n, k;
+	char str[] = "";
 	
 	/*
 	
@@ -132,10 +133,7 @@ int main(int argc, char *argv[]){
 	printf("\nPALAVRA FIBONACCI DE %d EH: \n", n);
 	printf("%s\n",palaFibonacci(n));
 	
-
 	binario(n);
-			
-	*/	
 	
 	printf("\nMULTIPLICA DE a POR b USANDO SOMAS SUCESSIVAS\n");
 	printf("INSIRA a: \n");
@@ -143,6 +141,16 @@ int main(int argc, char *argv[]){
 	printf("INSIRA b: \n");
 	scanf("%d",&b);
 	printf("\n%d MULTIPLICADO POR %d EH: %d\n", a, b, multSomas(a, b));
+
+	*/	
+
+	printf("\n     INVERTE STRING\n\n");
+	printf("INSIRA STRING: \n");
+	scanf("%s",&str); 
+	printf("\nSTRING %s INVERTIDA EH: ", str);
+	inverteString(str);
+
+
 	
 		
 }
