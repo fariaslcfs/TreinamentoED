@@ -142,15 +142,20 @@ int main(int argc, char *argv[]){
 	scanf("%d",&b);
 	printf("\n%d MULTIPLICADO POR %d EH: %d\n", a, b, multSomas(a, b));
 
-	*/	
-
 	printf("\n     INVERTE STRING\n\n");
 	printf("INSIRA STRING: \n");
 	scanf("%s",&str); 
 	printf("\nSTRING %s INVERTIDA EH: ", str);
 	inverteString(str);
 
-
+	printf("\nGERADOR DA SEQUENCIA F(1)=1, F(2)=2 , F(n)=2*F(n-1)+3*F(n-2)\n");	
+	printf("INSIRA n: \n");
+	scanf("%d",&n);
+	printf("\nO %dTH DA SEQUENCIA EH: %d\n", n, sequencia(n)); 	
 	
+	*/		
+	
+		
+		
 		
 }
