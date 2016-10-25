@@ -421,8 +421,8 @@ void binario(int n){
 	int * vetor = interna(n, i, v);
 	
 	int j;
-	for(j = 0; j < nBits; j++){
-		
+	for(j = nBits - 1; j >= 0; j--){
+		printf("%d",vetor[j]);
 	}
 }
 

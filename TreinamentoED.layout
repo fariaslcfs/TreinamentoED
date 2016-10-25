@@ -45,9 +45,9 @@ TopLine=32
 LeftChar=1
 [Editor_1]
 <<<<<<< HEAD
-CursorCol=3
-CursorRow=425
-TopLine=402
+CursorCol=32
+CursorRow=424
+TopLine=408
 =======
 <<<<<<< HEAD
 CursorCol=42
@@ -72,7 +72,7 @@ Focused=1
 <<<<<<< HEAD
 CursorCol=2
 CursorRow=140
-TopLine=111
+TopLine=108
 =======
 <<<<<<< HEAD
 CursorCol=1
