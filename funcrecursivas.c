@@ -427,7 +427,7 @@ void binario(int n){
 }
 
 
-/* a) */  
+/* b) */  
 int multSomas(int a, int b){
 	int interna(int a, int aux, int b){
 		if(a == 0 || b == 0) return 0;
