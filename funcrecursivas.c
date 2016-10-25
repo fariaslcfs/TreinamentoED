@@ -406,7 +406,7 @@ void binario(int n){
 		nBits++;
 		m /= 2;
 	}
-	
+
 	int * interna(int n, int i, int * vet){
 		if(n < 2){
 			vet[i] = n;
@@ -426,8 +426,19 @@ void binario(int n){
 	}
 }
 
- 
- 
+
+/* a) */  
+int multSomas(int a, int b){
+	int interna(int a, int aux, int b){
+		if(a == 0 || b == 0) return 0;
+		if(b == 1) return a;
+		a += aux;
+		interna(a, aux, b - 1);	
+	}
+	return interna(a, a, b);
+	
+}
+	
  
  
  

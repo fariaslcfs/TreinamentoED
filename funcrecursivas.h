@@ -54,6 +54,6 @@ int catalan(int n);
 
 char * palaFibonacci(int n);
 
-int * binario(int n);
+void binario(int n);
 
-
+int multSomas(int a, int b);

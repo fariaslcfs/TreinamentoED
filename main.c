@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[]){
 
-	int i, n, k;
+	int a, b, i, n, k;
 	
 	/*
 	
@@ -132,15 +132,17 @@ int main(int argc, char *argv[]){
 	printf("\nPALAVRA FIBONACCI DE %d EH: \n", n);
 	printf("%s\n",palaFibonacci(n));
 	
-	*/	
 
-	printf("\nAPRESENTA NATURAL n EM BINARIO\n");
-	scanf("%d",&n);
-	printf("\nBINARIO DE %d EH: \n", n);
-	
 	binario(n);
 			
+	*/	
 	
+	printf("\nMULTIPLICA DE a POR b USANDO SOMAS SUCESSIVAS\n");
+	printf("INSIRA a: \n");
+	scanf("%d",&a); 
+	printf("INSIRA b: \n");
+	scanf("%d",&b);
+	printf("\n%d MULTIPLICADO POR %d EH: %d\n", a, b, multSomas(a, b));
 	
 		
 }
