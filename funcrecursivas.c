@@ -398,7 +398,7 @@ usando uma estratégia similar a da busca binaria. Dica: Se não é o elemento do m
 o menor dos índices encontrados. Se for o elemento do meio, continue a busca apenas do lado esquerdo, retornando a 
 posição de lá se encontrar e o meio senão encontrar*/ 
  
-/* a) */ 
+/* a) Impressão de um número natural em base binaria*/ 
 void binario(int n){
 	int nBits = 1;
 	int m = n;
@@ -427,7 +427,7 @@ void binario(int n){
 }
 
 
-/* b) */  
+/* b) Multiplicação de dois números naturais através de somas consecutivas.*/  
 int multSomas(int a, int b){
 	int interna(int a, int aux, int b){
 		if(a == 0 || b == 0) return 0;
@@ -439,7 +439,7 @@ int multSomas(int a, int b){
 	
 }
 
-/* c) */
+/* c) Inversão de uma string.*/
 void inverteString(char * str){
 	char * interna(char * s, char * aux, int i, int tam){
 		if(tam == -1){
@@ -453,14 +453,17 @@ void inverteString(char * str){
 	printf("%s",interna(str, strAux, 0, t));
 }	
 
-/* d) */
+/* d) Gerador da sequencia:
+   (a) F(1)=1
+   (b) F(2)=2
+   (c) F(n)= 2*F(n-1)+3*F(n-2) <= fórmula Geral Usando a formula podemos identificar que F(3)=2*F(2)+3*F(1) F(3)=4+3=7*/
 int sequencia(int n){
 	if(n == 1) return 1;
 	if(n == 2) return 2;
 	return 2 * sequencia(n - 1) + 3 * sequencia(n - 2);
 }
 
-/* e) */
+/* e) Verificar se uma palavra é palíndromo. */
 int palindromo(char * str){
 	int interna(char * s, char * aux, int i, int tam, int teste){
 		if(tam == -1){
