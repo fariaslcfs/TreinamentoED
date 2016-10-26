@@ -478,6 +478,10 @@ int palindromo(char * str){
 	interna(str, strAux, 0, t, 0);
 } 
  
+/* f) Busca sequencial em um veto desordenado que retorna a posição da primeira ocorrência de um elemento procurado
+usando uma estratégia similar a da busca binaria. Dica: Se não é o elemento do meio, procure dos dois lados e retorne
+o menor dos índices encontrados. Se for o elemento do meio, continue a busca apenas do lado esquerdo, retornando a 
+posição de lá se encontrar e o meio senão encontrar */
  
  
  
