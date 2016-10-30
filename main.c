@@ -194,9 +194,7 @@ int main(int argc, char *argv[]){
 	}
 	printf("O ELEMENTO DA SEQUENCIA EH %d\n", h(a, b));
 
-	*/	
-
-	printf("\n SEQUENCIA A(m,n) = n + 1 se m = 0, = A(m - 1, 1) se m > 0 e n = 0, A(m - 1, A(m, n - 1)) se m > 0 e n > 0\n");
+	printf("\n SEQUENCIA DE ACKERMANN \nA(m,n) = n + 1 se m = 0, = A(m - 1, 1) se m > 0 e n = 0, A(m - 1, A(m, n - 1)) se m > 0 e n > 0\n");
 	printf("INSIRA DOIS INTEIROS\n");
 	scanf("%d\n", &a); scanf("%d", &b);
 	if(a < 0 || b < 0){
@@ -205,9 +203,12 @@ int main(int argc, char *argv[]){
 	}
 	printf("O ELEMENTO DA SEQUENCIA EH %d\n", A(a, b));
 	 
-
+	*/
 	
-	
+	printf("\n SOMA SERIE INTERVALO [a, b] COM INCREMENTO DE k\n");
+	printf("INSIRA a, b, k\n");
+	scanf("%d\n", &a); scanf("%d\n", &b); scanf("%d", &k);
+	printf("A SOMA EH %d\n", somaSerie(a, b, k));	
 	
 	
 	

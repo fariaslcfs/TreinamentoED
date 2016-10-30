@@ -1,3 +1,4 @@
+#include <conio.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -582,7 +583,7 @@ int h(int m, int n){
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 30) A função de Acherman é definida recursivamente nos números não negativos como segue:
+/* 30) A função de Achermann é definida recursivamente nos números não negativos como segue:
 
       A(m, n) = n + 1 se m = 0
               = A(m - 1, 1) se m > 0 e n = 0
@@ -598,5 +599,29 @@ int A(int m, int n){
 	
 /*----------------------------------------------------------------------------------------------------------*/
 
+/* 31) Escreva, usando a linguagem C, uma função recursiva, SomaSerie(i,j,k: inteiro): inteiro, que devolva a 
+soma da série de valores do intervalo [i,j], com incremento k. */
+
+int somaSerie(int i, int j, int inc){
+	if(j - i <= 0){
+		printf("PRECISA HAVER UM INTERVALO!");
+		exit(0);
+	}
+	if(i + inc >= j){
+		printf("O INCREMENTO IGUALOU OU EXTRAPOLOU O LIMITE DO INTERVALO. A SOMA DOS ELEMENTOS DO INTERVALO EH ");
+	 	return i + j;
+	}
+	int interna(int elemento, int limite, int incremento, int soma){
+		if(elemento > limite) return soma;
+		soma += elemento;
+		elemento += incremento;
+		return interna(elemento, limite, incremento, soma);
+	}
+	int it = 1;	
+	int soma = 0;
+	return interna(i, j, inc, soma);
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
 
 
