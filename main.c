@@ -178,6 +178,12 @@ int main(int argc, char *argv[]){
 		printf("O indice encontrado eh %d e o caracter correspondente eh %c", r, str[r]);	
 	}
 
+	*/	
+
+	printf("\n MULTIPLICACAO RUSSA DE a X b\n");
+	printf("INSIRA a E b\n");
+	scanf("%d\n", &a); scanf("%d", &b);
+	printf("O PRODUTO DE %d POR %d EH %d\n", a, b, multRussa(a, b));
 
 
 
@@ -186,10 +192,7 @@ int main(int argc, char *argv[]){
 
 
 
-
-
-
-	*/		 
+	 
 
 	
 	

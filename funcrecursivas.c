@@ -552,10 +552,14 @@ Exemplo: 27 × 82
 Programar em C um algoritmo recursivo que permita fazer à multiplicação a russa de 2 entradas; */
  
 int multRussa(int a, int b){
-	
-	
-	
-	
+	int interna(int a, int b, int soma){
+		if(a == 0) return soma;
+		if(a % 2 != 0) soma += b;
+		b = b * 2;
+		return interna(a / 2, b, soma);		
+	}
+	int soma = 0;
+	interna(a, b, soma);
 } 
  
  
