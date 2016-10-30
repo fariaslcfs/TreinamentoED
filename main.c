@@ -203,14 +203,18 @@ int main(int argc, char *argv[]){
 	}
 	printf("O ELEMENTO DA SEQUENCIA EH %d\n", A(a, b));
 	 
-	*/
-	
 	printf("\n SOMA SERIE INTERVALO [a, b] COM INCREMENTO DE k\n");
 	printf("INSIRA a, b, k\n");
 	scanf("%d\n", &a); scanf("%d\n", &b); scanf("%d", &k);
 	printf("A SOMA EH %d\n", somaSerie(a, b, k));	
 	
-	
+	*/
+
+	printf("\nSOMA SERIE S = 2 + 5/2 + 10/3 + ... + (1 + n^2 / n)\n");
+	printf("INSIRA n\n");
+	scanf("%d",&n);
+	float r = somaSerie2(n);
+	printf("A SOMA DA SERIE PARA n = %d EH %f\n", n, r);	
 	
 	
 		

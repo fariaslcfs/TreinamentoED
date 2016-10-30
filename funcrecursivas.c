@@ -624,4 +624,41 @@ int somaSerie(int i, int j, int inc){
 
 /*----------------------------------------------------------------------------------------------------------*/
 
+/* 32) Faça uma função recursiva, em linguagem C, que calcule o valor da série S descrita a seguir para um valor
+n>0 a ser fornecido como parâmetro para a mesma. 
+
+		S = (1 + 1^2)/1 = 2 + 5/2 + 10/3 + ... + (1 + n^2) / n
+		
+Escreva uma função recursiva em C que exibe todos os elementos em um array de inteiros, separados por espaço.
+*/
+
+float somaSerie2(int n){
+	float interna(int n, float soma){
+		if(n == 0){
+			return soma;	
+		} 
+		soma += ((1.0 + pow(n, 2.0)) / n);
+		return interna(n - 1, soma);
+	}
+	float soma = 0.0;
+	return interna(n, soma);	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
