@@ -63,3 +63,5 @@ void inverteString(char * str);
 int sequencia(int n);
 
 int palindromo(char * str);
+
+int buscaSeq(char * v, char ele);

@@ -9,6 +9,7 @@
 int main(int argc, char *argv[]){
 
 	int a, b, i, n, k;
+	char c;
 	static char str[] = "";
 	
 	/*
@@ -153,7 +154,7 @@ int main(int argc, char *argv[]){
 	scanf("%d",&n);
 	printf("\nO %dTH DA SEQUENCIA EH: %d\n", n, sequencia(n)); 	
 	
-	*/		
+		
 
 	printf("\n     TESTE PALINDROMOn\n");
 	printf("INSIRA STRING: \n");
@@ -165,5 +166,24 @@ int main(int argc, char *argv[]){
 	if(teste == 0){
 		printf("%s EH PALINDROMO", str);
 	}
+	
+	printf("\n     TESTE BUSCAn\n");
+	printf("INSIRA O VETOR E DEPOIS O CARACTER A BUSCAR: \n");
+	scanf("%s\n",&str); scanf("%c",&c);
+	int r = buscaSeq(str, c);
+	if(r == -1){
+		printf("O caracter %c nao esta presente na string %s\n", c, str);	
+	}
+	else{
+		printf("O indice encontrado eh %d e o caracter correspondente eh %c", r, str[r]);	
+	}
+	*/		 
+
+	
+	
+	
+	
+	
+	
 		
 }
