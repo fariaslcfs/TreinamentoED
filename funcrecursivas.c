@@ -549,7 +549,9 @@ Exemplo: 27 × 82
 		---------------
 		Soma:     2214
 
-Programar em C um algoritmo recursivo que permita fazer à multiplicação a russa de 2 entradas; */
+Programar em C um algoritmo recursivo que permita fazer à multiplicação a russa de 2 entradas; 
+
+*/
  
 int multRussa(int a, int b){
 	int interna(int a, int b, int soma){
@@ -561,11 +563,40 @@ int multRussa(int a, int b){
 	int soma = 0;
 	interna(a, b, soma);
 } 
- 
- 
- 
-	
 
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 29) Implemente, usando a linguagem C, a função h definida recursivamente por: 
+
+    h(m,n) = m + 1 se n = 1
+    	   = n - 1 se m = 1	
+           = h(m, n - 1) + h(m - 1, n) se m > 1 e n > 1
+*/
+
+int h(int m, int n){
+	if(m < 1 || n < 1) return -1;
+	if(n == 1) return m + 1;
+	if(m == 1) return n - 1;
+	return h(m, n - 1) + h(m - 1, n);	
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 30) A função de Acherman é definida recursivamente nos números não negativos como segue:
+
+      A(m, n) = n + 1 se m = 0
+              = A(m - 1, 1) se m > 0 e n = 0
+              = A(m - 1, A(m, n - 1)) se m > 0 e n > 0
+ */
+ 
+int A(int m, int n){
+	if(m < 0 || n < 0) return -1;
+	if(m == 0) return n + 1;
+	if(m > 0 && n == 0) return A(m - 1, 1);
+	if(m > 0 && n > 0) return A(m - 1, A(m, n - 1));	
+} 
+	
+/*----------------------------------------------------------------------------------------------------------*/
 
 
 

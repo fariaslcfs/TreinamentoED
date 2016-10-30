@@ -68,4 +68,6 @@ int buscaSeq(char * v, char ele);
 
 int multRussa(int a, int b);
 
+int h(int m, int n);
 
+int A(int m, int n);

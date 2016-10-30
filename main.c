@@ -178,20 +178,32 @@ int main(int argc, char *argv[]){
 		printf("O indice encontrado eh %d e o caracter correspondente eh %c", r, str[r]);	
 	}
 
-	*/	
-
 	printf("\n MULTIPLICACAO RUSSA DE a X b\n");
 	printf("INSIRA a E b\n");
 	scanf("%d\n", &a); scanf("%d", &b);
 	printf("O PRODUTO DE %d POR %d EH %d\n", a, b, multRussa(a, b));
 
+	
 
+	printf("\n SEQUENCIA h(m,n) = m + 1 se n = 1, = n + 1 se m = 1, h(m, n - 1) + h(m - 1, n) se n > 1 e m > 1\n");
+	printf("INSIRA DOIS INTEIROS\n");
+	scanf("%d\n", &a); scanf("%d", &b);
+	if(a < 1 || b < 1){
+		printf("SOMENTE NUMEROS >= 1\n");
+		exit(0);
+	}
+	printf("O ELEMENTO DA SEQUENCIA EH %d\n", h(a, b));
 
+	*/	
 
-
-
-
-
+	printf("\n SEQUENCIA A(m,n) = n + 1 se m = 0, = A(m - 1, 1) se m > 0 e n = 0, A(m - 1, A(m, n - 1)) se m > 0 e n > 0\n");
+	printf("INSIRA DOIS INTEIROS\n");
+	scanf("%d\n", &a); scanf("%d", &b);
+	if(a < 0 || b < 0){
+		printf("SOMENTE NUMEROS >= 0\n");
+		exit(0);
+	}
+	printf("O ELEMENTO DA SEQUENCIA EH %d\n", A(a, b));
 	 
 
 	
