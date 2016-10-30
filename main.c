@@ -177,6 +177,18 @@ int main(int argc, char *argv[]){
 	else{
 		printf("O indice encontrado eh %d e o caracter correspondente eh %c", r, str[r]);	
 	}
+
+
+
+
+
+
+
+
+
+
+
+
 	*/		 
 
 	
