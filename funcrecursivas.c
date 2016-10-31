@@ -667,8 +667,8 @@ A leitura dos elementos do vetor e impressão do menor elemento devem ser feitas 
 */
 
 int * menorElementoVetor(int * vet, int n){
-	int * interna(int * vet, int n, int teste){
-		if(n == 0 && teste == 0) return vet;
+	int interna(int * vet, int n, int teste){
+		if(n == 0) return teste;
 		if(vet[n - 1] > vet[n]){
 			int aux = vet[n];
 			vet[n] = vet[n - 1];
@@ -677,9 +677,18 @@ int * menorElementoVetor(int * vet, int n){
 		}	
 		interna(vet, n - 1, teste);
 	}
-	
 	int teste = 0;
-	interna(vet, n, teste);
+	int r = interna(vet, n - 1, teste);
+	printf("%d\n", r);
+	if(r == 0){
+		return vet;
+	}
+	else{
+		printf("%d\n",r);
+		teste = 0;
+		interna(vet, n - 1, teste);
+	}
+	/* printf("%d  %d  %d", vet[0], vet[1]); */
 }
 
 
