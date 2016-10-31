@@ -679,14 +679,12 @@ int * menorElementoVetor(int * vet, int n){
 	}
 	int teste = 0;
 	int r = interna(vet, n - 1, teste);
-	printf("%d\n", r);
 	if(r == 0){
 		return vet;
 	}
 	else{
-		printf("%d\n",r);
 		teste = 0;
-		interna(vet, n - 1, teste);
+		menorElementoVetor(vet, n);
 	}
 	/* printf("%d  %d  %d", vet[0], vet[1]); */
 }

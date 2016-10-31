@@ -224,12 +224,11 @@ int main(int argc, char *argv[]){
 	printf("EXIBE ELEMENTOS DO VETOR E EXIBE O MENOR DOS ELEMENTOS\n");
 	int v[] = {2,1,4,22,11,4,4,3,1,1,1,1};
 	int * ptr = menorElementoVetor(v, 12);
-/*	printf("eh o menor elemento de\n"); */
-	
-/*	for(i = 0; i < 12; i++){
-		printf("%d\n", ptr[i]);
+	printf("%d eh o menor elemento do vetor\n\n", ptr[0]);	
+	for(i = 0; i < 12; i++){
+		printf("%d ", ptr[i]);
 	}
-*/	
+	
 	
 	
 	
