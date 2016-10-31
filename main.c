@@ -207,14 +207,32 @@ int main(int argc, char *argv[]){
 	printf("INSIRA a, b, k\n");
 	scanf("%d\n", &a); scanf("%d\n", &b); scanf("%d", &k);
 	printf("A SOMA EH %d\n", somaSerie(a, b, k));	
-	
-	*/
 
 	printf("\nSOMA SERIE S = 2 + 5/2 + 10/3 + ... + (1 + n^2 / n)\n");
 	printf("INSIRA n\n");
 	scanf("%d",&n);
 	float r = somaSerie2(n);
 	printf("A SOMA DA SERIE PARA n = %d EH %f\n", n, r);	
+	
+	printf("EXIBE ELEMENTOS SOMASERIE2\n");
+	printf("INSIRA UM NUMERO n > 0\n");
+	scanf("%d", &n);
+	exibeSomaSerie2(n);
+
+	*/		
+
+	printf("EXIBE ELEMENTOS DO VETOR E EXIBE O MENOR DOS ELEMENTOS\n");
+	int v[] = {2,1,4,22,11,4,4,3,1,1,1,1};
+	int * ptr = menorElementoVetor(v, 12);
+	printf("%d eh o menor elemento de\n");
+	for(i = 0; i < 12; i++){
+		printf("%d\n", *(ptr + i));
+	}
+	
+	
+	
+	
+	
 	
 	
 		

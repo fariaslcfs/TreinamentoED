@@ -73,3 +73,7 @@ int h(int m, int n);
 int A(int m, int n);
 
 float somaSerie2(int n);
+
+void exibeSomaSerie2(int n);
+
+int * menorElementoVetor(int * vet, int n);
