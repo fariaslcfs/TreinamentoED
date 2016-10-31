@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[]){
 
-	int a, b, i, n, k;
+	int a, b, i, j, n, k;
 	char c;
 	static char str[] = "";
 	
@@ -219,8 +219,6 @@ int main(int argc, char *argv[]){
 	scanf("%d", &n);
 	exibeSomaSerie2(n);
 
-	*/		
-
 	printf("EXIBE ELEMENTOS DO VETOR E EXIBE O MENOR DOS ELEMENTOS\n");
 	int v[] = {2,1,4,22,11,4,4,3,1,1,1,1};
 	int * ptr = menorElementoVetor(v, 12);
@@ -229,7 +227,12 @@ int main(int argc, char *argv[]){
 		printf("%d ", ptr[i]);
 	}
 	
+	*/		
 	
+	printf("EXIBE SEQUENCIA DO INTERVALO FECHADO [i, j] COM INCREMENTO k\n");
+	printf("INSIRA i, j, k\n\n");
+	scanf("%d\n", &i); scanf("%d\n", &j); scanf("%d", &k);	
+	imprimeSerie(i, j, k);
 	
 	
 	

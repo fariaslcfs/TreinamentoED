@@ -77,3 +77,5 @@ float somaSerie2(int n);
 void exibeSomaSerie2(int n);
 
 int * menorElementoVetor(int * vet, int n);
+
+int imprimeSerie(int i, int j, int k);
