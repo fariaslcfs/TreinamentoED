@@ -704,7 +704,35 @@ void imprimeSerie(int i, int j, int k){
 	return interna(i, j, k, soma);
 }
 
+/*----------------------------------------------------------------------------------------------------------*/
 
+/* 35) Dado um número n na base decimal, escreva uma função recursiva em C que converte este número para binário. */
+int converteParaBinario(int n){
+    if (n < 2) /* Tirado de http://www.scriptbrasil.com.br/forum/topic/175795-convers%C3%A3o-decimal-bin%C3%A1rio-com-recurs%C3%A3o/*/
+        return n;
+ 
+    return ( 10 * converteParaBinario( n / 2 ) ) + n % 2;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 36) Um palíndromo é uma string que é lida da mesma maneira da esquerda para a direita e da direita para a
+esquerda. Alguns exemplos de palíndromo são radar e a bola da loba (se os espaços forem ignorados) Escreva uma
+função recursiva que retorna 1 se a string armazenada no array for um palíndromo e 0, caso contrário. O método
+deve ignorar espaços e pontuação na string. */
 
 
 

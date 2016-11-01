@@ -227,15 +227,16 @@ int main(int argc, char *argv[]){
 		printf("%d ", ptr[i]);
 	}
 	
-	*/		
-	
 	printf("EXIBE SEQUENCIA DO INTERVALO FECHADO [i, j] COM INCREMENTO k\n");
 	printf("INSIRA i, j, k\n\n");
 	scanf("%d\n", &i); scanf("%d\n", &j); scanf("%d", &k);	
 	imprimeSerie(i, j, k);
 	
+	*/		
 	
-	
+	printf("CONVERSOR DECIMAL BINARIO\nDIGITE UM NATURAL\n");
+	scanf("%d", &n);
+	printf("%d EM BINARIO EH %d\n", n, converteParaBinario(n));
 	
 	
 		
