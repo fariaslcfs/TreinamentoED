@@ -722,21 +722,25 @@ deve ignorar espaços e pontuação na string. */
 
 
 
-37) Uma matriz maze de 0s e 1s, de 10X10, representa um labirinto no qual um viajante
+/* 37) Uma matriz maze de 0s e 1s, de 10X10, representa um labirinto no qual um viajante
 precisa encontrar um caminho de maze[0][0] a maze[9][9]. O viajante pode passar de
 um quadrado para qualquer outro adjacente na mesma fileira ou coluna, mas não pode
 saltar quadrados nem se movimentar na diagonal. Além disso, o viajante não pode
 entrar num quadrado contendo um 1. maze[0][0] e maze[9][9] contêm 0s. Escreva uma
 rotina recursiva que aceite este labirinto maze e imprima uma mensagem informando a
 inexistência de um caminho através do labirinto, ou que imprima uma lista de posições
-representando um caminho de [0][0] a [9][9].
+representando um caminho de [0][0] a [9][9]. */
 
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 38) Escreva uma função recursiva que calcule a soma de dois números naturais, através de incrementos sucessivos
 (Ex.: 3 + 2 = ++(++3)). */
 
-
+int somaIncremento(int a, int b){
+	if(b == 0) return a;
+	a++;
+	return somaIncremento(a, b - 1);	
+}
 
 
 
@@ -748,7 +752,8 @@ representando um caminho de [0][0] a [9][9].
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 39) Escreva uma função recursiva que calcule a multiplicação de dois números naturais, através de incrementos sucessivos */
+/* 39) Escreva uma função recursiva que calcule a multiplicação de dois números naturais, através de incrementos
+sucessivos */
 
 
 
@@ -767,8 +772,13 @@ representando um caminho de [0][0] a [9][9].
 /* 40) Escreva uma função recursiva que calcule a sequência dada por:
 F(1) = 1
 F(2) = 2
-F(n) = 2 * F(n-1) + 3 * F(n-2).*/
+F(n) = 2 * F(n-1) + 3 * F(n-2). */
 
+int sequencia2(int n){
+	if(n == 1) return 1;
+	if(n == 2) return 2;
+	return 2  * sequencia2(n - 1) + 3 * sequencia2(n - 2);
+}
 
 
 

@@ -81,3 +81,19 @@ int * menorElementoVetor(int * vet, int n);
 int imprimeSerie(int i, int j, int k);
 
 int converteParaBinario(int n);
+
+
+
+
+
+
+
+
+
+int sequencia2(int n);
+
+
+
+
+
+int somaIncremento(int a, int b)
