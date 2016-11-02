@@ -96,4 +96,12 @@ int sequencia2(int n);
 
 
 
-int somaIncremento(int a, int b)
+int somaIncremento(int a, int b);
+
+
+
+
+
+
+
+int somaCubos(int n);

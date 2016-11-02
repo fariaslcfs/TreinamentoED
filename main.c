@@ -232,11 +232,45 @@ int main(int argc, char *argv[]){
 	scanf("%d\n", &i); scanf("%d\n", &j); scanf("%d", &k);	
 	imprimeSerie(i, j, k);
 	
-	*/		
+		
 	
 	printf("CONVERSOR DECIMAL BINARIO\nDIGITE UM NATURAL\n");
 	scanf("%d", &n);
 	printf("%d EM BINARIO EH %d\n", n, converteParaBinario(n));
+	
+	*/	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	printf("RETORNA A SOMA DOS n PRIMEIROS CUBOS\n");
+	scanf("%d", &n);
+	printf("A SOMA DOS %d PRIMEIROS CUBOS EH %d\n\n", n, somaCubos(n));
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 		
