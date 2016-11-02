@@ -860,7 +860,7 @@ Escreva uma função recursiva em C para calcular fibg(f0, f1, n).*/
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 44) Escreva uma função recursiva que calcule a soma dos primeiros n cubos:
-S(n) = 13 + 23 + ... + n3 */
+S(n) = 1^3 + 2^3 + ... + n^3 */
 
 
 
