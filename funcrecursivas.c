@@ -710,10 +710,45 @@ void imprimeSerie(int i, int j, int k){
 int converteParaBinario(int n){
     if (n < 2) /* Tirado de http://www.scriptbrasil.com.br/forum/topic/175795-convers%C3%A3o-decimal-bin%C3%A1rio-com-recurs%C3%A3o/*/
         return n;
- 
     return ( 10 * converteParaBinario( n / 2 ) ) + n % 2;
 }
 	
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 36) Um palíndromo é uma string que é lida da mesma maneira da esquerda para a direita e da direita para a
+esquerda. Alguns exemplos de palíndromo são radar e a bola da loba (se os espaços forem ignorados) Escreva uma
+função recursiva que retorna 1 se a string armazenada no array for um palíndromo e 0, caso contrário. O método
+deve ignorar espaços e pontuação na string. */
+
+
+
+37) Uma matriz maze de 0s e 1s, de 10X10, representa um labirinto no qual um viajante
+precisa encontrar um caminho de maze[0][0] a maze[9][9]. O viajante pode passar de
+um quadrado para qualquer outro adjacente na mesma fileira ou coluna, mas não pode
+saltar quadrados nem se movimentar na diagonal. Além disso, o viajante não pode
+entrar num quadrado contendo um 1. maze[0][0] e maze[9][9] contêm 0s. Escreva uma
+rotina recursiva que aceite este labirinto maze e imprima uma mensagem informando a
+inexistência de um caminho através do labirinto, ou que imprima uma lista de posições
+representando um caminho de [0][0] a [9][9].
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 38) Escreva uma função recursiva que calcule a soma de dois números naturais, através de incrementos sucessivos
+(Ex.: 3 + 2 = ++(++3)). */
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 39) Escreva uma função recursiva que calcule a multiplicação de dois números naturais, através de incrementos sucessivos */
 
 
 
@@ -729,11 +764,131 @@ int converteParaBinario(int n){
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 36) Um palíndromo é uma string que é lida da mesma maneira da esquerda para a direita e da direita para a
-esquerda. Alguns exemplos de palíndromo são radar e a bola da loba (se os espaços forem ignorados) Escreva uma
-função recursiva que retorna 1 se a string armazenada no array for um palíndromo e 0, caso contrário. O método
-deve ignorar espaços e pontuação na string. */
+/* 40) Escreva uma função recursiva que calcule a sequência dada por:
+F(1) = 1
+F(2) = 2
+F(n) = 2 * F(n-1) + 3 * F(n-2).*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 41) Escreva uma função recursiva que dado um número n, gere todas as possíveis combinações com as n primeiras letras
+do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 42) Escreva uma função recursiva que gere todas as possíveis combinações para um jogo da MegaSena com 6 dezenas */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 43) Uma sequência de Fibonacci generalizada, de f0 a f1 é definida como fibg(f0, f1, 0), fibg(f0, f1, 1), 
+fibg(f0, f1, 2), ..., onde:
+fibg(f0, f1, 0) = f0
+fibg(f0, f1, 1) = f1
+fibg(f0, f1, n) = fibg(f0, f1, n-1) + fibg(f0, f1, n-2), se n > 1.
+Escreva uma função recursiva em C para calcular fibg(f0, f1, n).*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 44) Escreva uma função recursiva que calcule a soma dos primeiros n cubos:
+S(n) = 13 + 23 + ... + n3 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 45) Escreva uma função recursiva que calcule a soma dos dígitos de um número inteiro. Por exemplo, se a entrada 
+for 123, a saída deverá ser 1+2+3 = 6. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* 46) Faça uma função recursiva que permita calcular a média um vetor de tamanho N. */
 
 
 
