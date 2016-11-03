@@ -181,8 +181,6 @@ int main(int argc, char *argv[]){
 	scanf("%d\n", &a); scanf("%d", &b);
 	printf("O PRODUTO DE %d POR %d EH %d\n", a, b, multRussa(a, b));
 
-	
-
 	printf("\n SEQUENCIA h(m,n) = m + 1 se n = 1, = n + 1 se m = 1, h(m, n - 1) + h(m - 1, n) se n > 1 e m > 1\n");
 	printf("INSIRA DOIS INTEIROS\n");
 	scanf("%d\n", &a); scanf("%d", &b);
@@ -279,7 +277,7 @@ int main(int argc, char *argv[]){
 	printf("MULTIPLICACAO DE a X b POR MEIO DE INCREMENTOS\n");
 	printf("INSIRA a, b\n");
 	scanf("%d\n", &a); scanf("%d", &b);
-	printf("O RESULTADO DE a X b EH %d\n", somaIncremento(a, b));
+	printf("O RESULTADO DE a X b EH %d\n", multIncremento(a, b));
 	
 	
 	return 0;

@@ -47,7 +47,7 @@ LeftChar=1
 <<<<<<< HEAD
 CursorCol=1
 CursorRow=723
-TopLine=866
+TopLine=818
 =======
 <<<<<<< HEAD
 CursorCol=42
@@ -67,12 +67,12 @@ TopLine=1
 LeftChar=1
 [Editors]
 Order=0,1,2
-Focused=1
+Focused=0
 [Editor_0]
 <<<<<<< HEAD
-CursorCol=1
-CursorRow=282
-TopLine=261
+CursorCol=76
+CursorRow=37
+TopLine=10
 =======
 <<<<<<< HEAD
 CursorCol=1
