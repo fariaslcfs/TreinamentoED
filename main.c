@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
 	int a, b, i, j, n, k;
 	char c;
 	static char str[] = "";
-	
+
 	/*
 	
 	printf("\nFATORIAL DE n: \nINSIRA UM NUMERO INTEIRO: \n");
@@ -153,8 +153,6 @@ int main(int argc, char *argv[]){
 	printf("INSIRA n: \n");
 	scanf("%d",&n);
 	printf("\nO %dTH DA SEQUENCIA EH: %d\n", n, sequencia(n)); 	
-	
-		
 
 	printf("\n     TESTE PALINDROMOn\n");
 	printf("INSIRA STRING: \n");
@@ -231,14 +229,12 @@ int main(int argc, char *argv[]){
 	printf("INSIRA i, j, k\n\n");
 	scanf("%d\n", &i); scanf("%d\n", &j); scanf("%d", &k);	
 	imprimeSerie(i, j, k);
-	
-		
-	
+
 	printf("CONVERSOR DECIMAL BINARIO\nDIGITE UM NATURAL\n");
 	scanf("%d", &n);
 	printf("%d EM BINARIO EH %d\n", n, converteParaBinario(n));
 	
-	*/	
+	
 	
 	
 	
@@ -259,18 +255,34 @@ int main(int argc, char *argv[]){
 	scanf("%d", &n);
 	printf("A SOMA DOS %d PRIMEIROS CUBOS EH %d\n\n", n, somaCubos(n));
 	
+	printf("FIBONACCI GENERALIZADA F(a,b,n) = a se n == 0; F(a,b,n) = b se n == 1 e F(a,b,n-1) + F(a,b,n-2) se n > 1\n");
+	printf("INSIRA a, b, n\n");
+	scanf("%d\n", &a); scanf("%d\n", &b); scanf("%d", &n);
+	printf("O %dth TERMO DA SEQUENCIA FIBONACCI GENERALIZADA EH %d\n", n + 1, fibonacciGeneralizada(a, b, n));
+
+	printf("SOMA DOS DIGITOS DE UMA NUMERO n\n");
+	scanf("%d", &n);
+	printf("A SOMA DOS DIGITOS DO NUMERO %d EH %d\n", n, somaDigitos(n));
+
+	printf("MEDIA ARITMETICA DO VETOR v\n");
+	printf("INSIRA O TAMANHO DO VETOR\n");
+	scanf("%d", &j);
+	int v[j];
+	printf("\n INSIRA OS ELEMENTOS DO VETOR DE TAMANHO %d\n", j);
+	for(i = 0; i < j; i++){
+		scanf("%d", &v[i]);
+	}
+	printf("\n A MEDIA EH %f\n", media(v, j));
+		
+	*/		
+		
+	printf("MULTIPLICACAO DE a X b POR MEIO DE INCREMENTOS\n");
+	printf("INSIRA a, b\n");
+	scanf("%d\n", &a); scanf("%d", &b);
+	printf("O RESULTADO DE a X b EH %d\n", somaIncremento(a, b));
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	return 0;
 	
 	
 		

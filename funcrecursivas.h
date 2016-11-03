@@ -98,10 +98,16 @@ int sequencia2(int n);
 
 int somaIncremento(int a, int b);
 
+int multIncremento(int a, int b);
 
 
 
 
 
+int fibonacciGeneralizada(int a, int b, int n);
 
 int somaCubos(int n);
+
+int somaDigitos(int n);
+
+float media(int vet, int n);

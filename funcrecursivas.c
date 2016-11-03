@@ -722,6 +722,16 @@ deve ignorar espaços e pontuação na string. */
 
 
 
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
 /* 37) Uma matriz maze de 0s e 1s, de 10X10, representa um labirinto no qual um viajante
 precisa encontrar um caminho de maze[0][0] a maze[9][9]. O viajante pode passar de
 um quadrado para qualquer outro adjacente na mesma fileira ou coluna, mas não pode
@@ -731,41 +741,36 @@ rotina recursiva que aceite este labirinto maze e imprima uma mensagem informand
 inexistência de um caminho através do labirinto, ou que imprima uma lista de posições
 representando um caminho de [0][0] a [9][9]. */
 
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 38) Escreva uma função recursiva que calcule a soma de dois números naturais, através de incrementos sucessivos
 (Ex.: 3 + 2 = ++(++3)). */
 
 int somaIncremento(int a, int b){
+	if(a == 0) return b;
 	if(b == 0) return a;
-	a++;
-	return somaIncremento(a, b - 1);	
+	return 1 + somaIncremento(a, b - 1);	
 }
-
-
-
-
-
-
-
-
 
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 39) Escreva uma função recursiva que calcule a multiplicação de dois números naturais, através de incrementos
 sucessivos */
-
-
-
-
-
-
-
-
-
-
-
-
+int multIncremento(int a, int b){
+	if(a == 0 || b == 0) return 0;
+	if(b == 1) return a;
+	return a + multIncremento(a, b - 1);
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -780,29 +785,10 @@ int sequencia2(int n){
 	return 2  * sequencia2(n - 1) + 3 * sequencia2(n - 2);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 41) Escreva uma função recursiva que dado um número n, gere todas as possíveis combinações com as n primeiras letras
 do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
-
-
-
-
-
-
 
 
 
@@ -837,25 +823,19 @@ do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 43) Uma sequência de Fibonacci generalizada, de f0 a f1 é definida como fibg(f0, f1, 0), fibg(f0, f1, 1), 
-fibg(f0, f1, 2), ..., onde:
+/* 43) Uma sequência de Fibonacci generalizada, de f0 a f1 é definida como 
+fibg(f0, f1, 0), fibg(f0, f1, 1), fibg(f0, f1, 2), ..., onde:
 fibg(f0, f1, 0) = f0
 fibg(f0, f1, 1) = f1
 fibg(f0, f1, n) = fibg(f0, f1, n-1) + fibg(f0, f1, n-2), se n > 1.
 Escreva uma função recursiva em C para calcular fibg(f0, f1, n).*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+int fibonacciGeneralizada(int a, int b, int n){
+	if(n < 0) return -1;
+	if(n == 0) return a;
+	if(n == 1) return b;
+	return fibonacciGeneralizada(a, b, n - 1) + fibonacciGeneralizada(a, b, n - 2);
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -872,44 +852,29 @@ int somaCubos(int n){
 	return interna(i, j, n, soma);                                                                                                                                                                   
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 45) Escreva uma função recursiva que calcule a soma dos dígitos de um número inteiro. Por exemplo, se a entrada 
 for 123, a saída deverá ser 1+2+3 = 6. */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int somaDigitos(int n){
+	if(n < 10) return n % 10;
+	return somaDigitos(n / 10) + n % 10; 
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 46) Faça uma função recursiva que permita calcular a média um vetor de tamanho N. */
 
-
+float media(int vet[], int n){
+	float interna(int vet[], int n, int aux, float soma){
+		if(n < 0) return soma / aux;
+		soma += vet[n];
+		return interna(vet, n - 1, aux, soma);			
+	}
+	int soma = 0.0;
+	return interna(vet, n - 1, n, soma);
+}
 
 
 
