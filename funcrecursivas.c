@@ -466,20 +466,19 @@ int sequencia(int n) {
 
 /* e) Verificar se uma palavra é palíndromo. */
 int palindromo(char * str) {
-	int interna(char * s, char * aux, int i, int tam, int teste) {
+	int interna(char * s, int i, int tam, int teste) {
 		if(tam == -1) {
-			if(teste > 0) return 1;
+			if(teste) return 1;
 			return teste;
 		}
-		aux[i] = s[tam];
-		if(aux[i] != s[i]) {
+		if(s[i] != s[tam]) {
 			teste++;
+			return 0;
 		}
-		interna(s, aux, i + 1, tam - 1, teste);
+		interna(s,i + 1, tam - 1, teste);
 	}
-	int t = strlen(str) - 1;
-	char strAux[t + 1];
-	interna(str, strAux, 0, t, 0);
+	int t = strlen(str);
+	interna(str, 0, t - 1, 0);
 }
 
 /* f) Busca sequencial em um vetor desordenado que retorna a posição da primeira ocorrência de um elemento procurado
@@ -720,15 +719,33 @@ esquerda. Alguns exemplos de palíndromo são radar e a bola da loba (se os espaço
 função recursiva que retorna 1 se a string armazenada no array for um palíndromo e 0, caso contrário. O método
 deve ignorar espaços e pontuação na string. */
 
-
-
-
-
-
-
-
-
-
+/* e) Verificar se uma palavra é palíndromo. */
+/* (a 0x61) até (z 0x7A) */
+int palindromoTeste(char * str) {
+	int interna(char * s, int i, int pos, int teste) {
+		if(pos == -1) {
+			if(teste) return 0;
+			return 1;
+		}
+		if(s[i] != s[pos]) {
+			teste++;
+			return 0;
+		}
+		return interna(s, i + 1, pos - 1, teste);
+	}
+	int i, t, comp, pos;
+	pos = 0;
+	comp = strlen(str);
+	char s[comp];
+	for(i = 0; i < comp; i++){
+		if(str[i] < 0x61 || str[i] > 0x7a){
+			continue;
+		}
+		s[pos] = str[i];
+		pos++;
+	}
+	return interna(s, 0, pos - 1, 0);
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 

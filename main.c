@@ -273,13 +273,20 @@ int main(int argc, char *argv[]){
 		scanf("%d", &v[i]);
 	}
 	printf("\n A MEDIA EH %f\n", media(v, j));
-		
-	*/		
+	
 		
 	printf("MULTIPLICACAO DE a X b POR MEIO DE INCREMENTOS\n");
 	printf("INSIRA a, b\n");
 	scanf("%d\n", &a); scanf("%d", &b);
 	printf("O RESULTADO DE a X b EH %d\n", somaIncremento(a, b));
+
+	*/	
+	printf("TESTE DE PALINDROMO\n");
+	printf("INSIRA UMA STRING\n");
+	scanf("%[^\n]s", str);
+	a = palindromoTeste(str);
+	printf("%s\n",(a > 0)?"EH PALINDROMO":"NAO EH PALINDROMO");
+	
 	
 	
 	return 0;

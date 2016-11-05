@@ -82,6 +82,8 @@ int imprimeSerie(int i, int j, int k);
 
 int converteParaBinario(int n);
 
+int palindromoTeste(char * str);
+
 
 
 
