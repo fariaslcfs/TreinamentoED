@@ -823,20 +823,41 @@ do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 42) Escreva uma função recursiva que gere todas as possíveis combinações para um jogo da MegaSena com 6 dezenas */
+/* Combinação simples de n elementos tomadaos de p a p     C(n,p)  
+	C(60,6) = 60! / 6!(60 - 6)!  */
+int geraCombMegaSena(int n){
+	int internaA(int a){
+		
+		
+		int internaB(int b){
+			
+			
+			int internaC(int c){
+				
+				
+				int internaD(int d){
+					
+					
+					int internaE(int e){
+						
+						
+						int internaF(int f){
+							if(f > 60) return 1;
+							internaF(f + 1);							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		
+	}	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 

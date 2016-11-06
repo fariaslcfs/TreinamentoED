@@ -231,24 +231,7 @@ int main(int argc, char *argv[]){
 	printf("CONVERSOR DECIMAL BINARIO\nDIGITE UM NATURAL\n");
 	scanf("%d", &n);
 	printf("%d EM BINARIO EH %d\n", n, converteParaBinario(n));
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	printf("RETORNA A SOMA DOS n PRIMEIROS CUBOS\n");
 	scanf("%d", &n);
 	printf("A SOMA DOS %d PRIMEIROS CUBOS EH %d\n\n", n, somaCubos(n));
@@ -258,7 +241,7 @@ int main(int argc, char *argv[]){
 	scanf("%d\n", &a); scanf("%d\n", &b); scanf("%d", &n);
 	printf("O %dth TERMO DA SEQUENCIA FIBONACCI GENERALIZADA EH %d\n", n + 1, fibonacciGeneralizada(a, b, n));
 
-	printf("SOMA DOS DIGITOS DE UMA NUMERO n\n");
+	printf("SOMA DOS DIGITOS DE UM NUMERO n\n");
 	scanf("%d", &n);
 	printf("A SOMA DOS DIGITOS DO NUMERO %d EH %d\n", n, somaDigitos(n));
 
@@ -272,23 +255,24 @@ int main(int argc, char *argv[]){
 	}
 	printf("\n A MEDIA EH %f\n", media(v, j));
 	
-		
 	printf("MULTIPLICACAO DE a X b POR MEIO DE INCREMENTOS\n");
 	printf("INSIRA a, b\n");
 	scanf("%d\n", &a); scanf("%d", &b);
-<<<<<<< HEAD
 	printf("O RESULTADO DE a X b EH %d\n", somaIncremento(a, b));
-
-	*/	
+	
 	printf("TESTE DE PALINDROMO\n");
 	printf("INSIRA UMA STRING\n");
 	scanf("%[^\n]s", str);
 	a = palindromoTeste(str);
 	printf("%s\n",(a > 0)?"EH PALINDROMO":"NAO EH PALINDROMO");
 	
-=======
+
 	printf("O RESULTADO DE a X b EH %d\n", multIncremento(a, b));
->>>>>>> 3f7fb1d28e06803dda58830d9a67d47d18351f4b
+
+	*/	
+	
+	geraCombMegaSena(60);
+	
 	
 	
 	return 0;
