@@ -834,7 +834,7 @@ int * geraCombMegaSena(int vet[]){
 		   d != a && d != b && d != c && d != e && d != f &&
 		   e != a && e != b && e != c && e != d && e != f){
 		   vet[0] = a; vet[1] = b; vet[2] = c; vet[3] = d; vet[4] = e; vet[5] = f;	
-		   printf("%d\n", cont);
+		   printf("%d %d %d %d %d %d\n", a, b, c, d, e, f, cont);
 		   cont++;
 		}
 		if(f == 60){e++; f = 1;}
