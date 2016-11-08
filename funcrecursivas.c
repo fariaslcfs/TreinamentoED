@@ -671,9 +671,9 @@ int * menorElementoVetor(int * vet, int n){
 		if(vet[n - 1] > vet[n]){
 			int aux = vet[n];
 			vet[n] = vet[n - 1];
-			vet[n - 1] = aux;	
-			teste++;		
-		}	
+			vet[n - 1] = aux;
+			teste++;
+		}
 		interna(vet, n - 1, teste);
 	}
 	int teste = 0;
@@ -689,7 +689,7 @@ int * menorElementoVetor(int * vet, int n){
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 34) Escreva, usando a linguagem C, uma função recursiva, ImprimeSerie(i,j,k: inteiro), que imprime na tela a 
+/* 34) Escreva, usando a linguagem C, uma função recursiva, ImprimeSerie(i,j,k: inteiro), que imprime na tela a
 série de valores do intervalo [i,j], com incremento k. */
 
 void imprimeSerie(int i, int j, int k){
@@ -711,7 +711,7 @@ int converteParaBinario(int n){
         return n;
     return ( 10 * converteParaBinario( n / 2 ) ) + n % 2;
 }
-	
+
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 36) Um palíndromo é uma string que é lida da mesma maneira da esquerda para a direita e da direita para a
@@ -776,7 +776,7 @@ representando um caminho de [0][0] a [9][9]. */
 int somaIncremento(int a, int b){
 	if(a == 0) return b;
 	if(b == 0) return a;
-	return 1 + somaIncremento(a, b - 1);	
+	return 1 + somaIncremento(a, b - 1);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
@@ -807,7 +807,10 @@ int sequencia2(int n){
 /* 41) Escreva uma função recursiva que dado um número n, gere todas as possíveis combinações com as n primeiras letras
 do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
 
+void arranjo(int n){
 
+
+}
 
 
 
@@ -823,33 +826,47 @@ do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
 /*----------------------------------------------------------------------------------------------------------*/
 
 /* 42) Escreva uma função recursiva que gere todas as possíveis combinações para um jogo da MegaSena com 6 dezenas */
-/* Combinação simples de n elementos tomadaos de p a p     C(n,p)  
+/* Combinação simples de n elementos tomadaos de p a p     C(n,p)
 	C(60,6) = 60! / 6!(60 - 6)!  */
-int * geraCombMegaSena(int vet[]){
-	int interna(int a, int b, int c, int d, int e, int f, int vet[], int cont){
-		if(a == 60) return vet;
+void geraCombMegaSena(void){
+	void interna(int a, int auxa, int b, int auxb, int c, int auxc, int d, int auxd, int e, int auxe, int f, int auxf, int cont){
+		if(a == 10) exit(0);
 		if(a != b && a != c && a != d && a != e && a != f &&
 		   b != a && b != c && b != d && b != e && b != f &&
 		   c != a && c != b && c != d && c != e && c != f &&
 		   d != a && d != b && d != c && d != e && d != f &&
 		   e != a && e != b && e != c && e != d && e != f){
-		   vet[0] = a; vet[1] = b; vet[2] = c; vet[3] = d; vet[4] = e; vet[5] = f;	
-		   printf("%d %d %d %d %d %d\n", a, b, c, d, e, f, cont);
+		   printf("%d %d %d %d %d %d   %d\n", a, b, c, d, e, f, cont);
 		   cont++;
 		}
-		if(f == 60){e++; f = 1;}
-		if(e == 60){d++; e = 1;}
-		if(d == 60){c++; d = 1;}
-		if(c == 60){b++; c = 1;}
-		if(b == 60){a++; b = 1;}
-		return interna(a, b, c, d, e, f + 1, vet, cont);
+		if(f == 10){
+            e++;
+            f = auxf + 1;
+        }
+		if(e == 10){
+            d++;
+            e = auxe + 1;
+		}
+		if(d == 10){
+            c++;
+            d = auxd + 1;
+        }
+		if(c == 10){
+            b++;
+            c = auxc + 1;
+        }
+		if(b == 10){
+            a++;
+            b = auxb + 1;
+		}
+		interna(a, auxa, b, auxb, c, auxc, d, auxd, e, auxe, f + 1, auxf, cont);
 	}
-	interna(1, 2, 3, 4, 5, 6, vet, 1);	
+	interna(1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 1);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 43) Uma sequência de Fibonacci generalizada, de f0 a f1 é definida como 
+/* 43) Uma sequência de Fibonacci generalizada, de f0 a f1 é definida como
 fibg(f0, f1, 0), fibg(f0, f1, 1), fibg(f0, f1, 2), ..., onde:
 fibg(f0, f1, 0) = f0
 fibg(f0, f1, 1) = f1
@@ -873,19 +890,19 @@ int somaCubos(int n){
 		if(j > n) return soma;
 		soma  += i * i * i;
 		return interna(i + 1, j + 1, n, soma);
-	}                            
+	}
 	int i = 0; int soma = 0; int j = 0;
-	return interna(i, j, n, soma);                                                                                                                                                                   
+	return interna(i, j, n, soma);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-/* 45) Escreva uma função recursiva que calcule a soma dos dígitos de um número inteiro. Por exemplo, se a entrada 
+/* 45) Escreva uma função recursiva que calcule a soma dos dígitos de um número inteiro. Por exemplo, se a entrada
 for 123, a saída deverá ser 1+2+3 = 6. */
 
 int somaDigitos(int n){
 	if(n < 10) return n % 10;
-	return somaDigitos(n / 10) + n % 10; 
+	return somaDigitos(n / 10) + n % 10;
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
@@ -896,7 +913,7 @@ float media(int vet[], int n){
 	float interna(int vet[], int n, int aux, float soma){
 		if(n < 0) return soma / aux;
 		soma += vet[n];
-		return interna(vet, n - 1, aux, soma);			
+		return interna(vet, n - 1, aux, soma);
 	}
 	int soma = 0.0;
 	return interna(vet, n - 1, n, soma);

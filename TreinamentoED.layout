@@ -1,99 +1,20 @@
-[Editor_17]
-CursorCol=1
-CursorRow=1
-TopLine=22
-LeftChar=1
-[Editor_8]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_19]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_16]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_15]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_10]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_9]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_4]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_2]
-CursorCol=32
-CursorRow=99
-TopLine=86
-LeftChar=1
-[Editor_1]
-<<<<<<< HEAD
-<<<<<<< HEAD
-CursorCol=1
-CursorRow=847
-TopLine=831
-=======
-CursorCol=1
-CursorRow=723
-TopLine=818
->>>>>>> 3f7fb1d28e06803dda58830d9a67d47d18351f4b
-=======
-<<<<<<< HEAD
-CursorCol=42
-CursorRow=381
-TopLine=365
-=======
-CursorCol=2
-CursorRow=248
-TopLine=212
->>>>>>> 860ebd1477e34bcf4c4aa81d52eddd9e49b0b678
->>>>>>> f3621c7680b6edfb8a07266b3f522eddc7d59bbd
-LeftChar=1
-[Editor_3]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editors]
-Order=0,1,2
-Focused=1
-[Editor_0]
-<<<<<<< HEAD
-<<<<<<< HEAD
-CursorCol=22
-CursorRow=274
-TopLine=254
-=======
-CursorCol=76
-CursorRow=37
-TopLine=10
->>>>>>> 3f7fb1d28e06803dda58830d9a67d47d18351f4b
-=======
-<<<<<<< HEAD
-CursorCol=1
-CursorRow=131
-TopLine=112
-=======
-CursorCol=1
-CursorRow=101
-TopLine=56
->>>>>>> 860ebd1477e34bcf4c4aa81d52eddd9e49b0b678
->>>>>>> f3621c7680b6edfb8a07266b3f522eddc7d59bbd
-LeftChar=1
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="default" />
+	<File name="funcrecursivas.c" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="27760" topLine="829" />
+		</Cursor>
+	</File>
+	<File name="funcrecursivas.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1386" topLine="79" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9008" topLine="246" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

@@ -96,7 +96,7 @@ int sequencia2(int n);
 
 
 
-int * geraCombMegaSena(int vet[]);
+void geraCombMegaSena(void);
 
 int somaIncremento(int a, int b);
 
