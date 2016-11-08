@@ -270,8 +270,8 @@ int main(int argc, char *argv[]){
 	printf("O RESULTADO DE a X b EH %d\n", multIncremento(a, b));
 
 	*/	
-	
-	geraCombMegaSena(60);
+	int vet[6];
+	geraCombMegaSena(vet);
 	
 	
 	

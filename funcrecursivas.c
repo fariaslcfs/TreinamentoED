@@ -825,38 +825,26 @@ do alfabeto. Ex.: n = 3. Resposta: ABC, ACB, BAC, BCA, CAB, CBA */
 /* 42) Escreva uma função recursiva que gere todas as possíveis combinações para um jogo da MegaSena com 6 dezenas */
 /* Combinação simples de n elementos tomadaos de p a p     C(n,p)  
 	C(60,6) = 60! / 6!(60 - 6)!  */
-int geraCombMegaSena(int n){
-	int internaA(int a){
-		
-		
-		int internaB(int b){
-			
-			
-			int internaC(int c){
-				
-				
-				int internaD(int d){
-					
-					
-					int internaE(int e){
-						
-						
-						int internaF(int f){
-							if(f > 60) return 1;
-							internaF(f + 1);							
-						}
-						
-					}
-					
-				}
-				
-			}
-			
+int * geraCombMegaSena(int vet[]){
+	int interna(int a, int b, int c, int d, int e, int f, int vet[], int cont){
+		if(a == 60) return vet;
+		if(a != b && a != c && a != d && a != e && a != f &&
+		   b != a && b != c && b != d && b != e && b != f &&
+		   c != a && c != b && c != d && c != e && c != f &&
+		   d != a && d != b && d != c && d != e && d != f &&
+		   e != a && e != b && e != c && e != d && e != f){
+		   vet[0] = a; vet[1] = b; vet[2] = c; vet[3] = d; vet[4] = e; vet[5] = f;	
+		   printf("%d\n", cont);
+		   cont++;
 		}
-		
-		
-	}	
-
+		if(f == 60){e++; f = 1;}
+		if(e == 60){d++; e = 1;}
+		if(d == 60){c++; d = 1;}
+		if(c == 60){b++; c = 1;}
+		if(b == 60){a++; b = 1;}
+		return interna(a, b, c, d, e, f + 1, vet, cont);
+	}
+	interna(1, 2, 3, 4, 5, 6, vet, 1);	
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
