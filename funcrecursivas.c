@@ -829,36 +829,37 @@ void arranjo(int n){
 /* Combinação simples de n elementos tomadaos de p a p     C(n,p)
 	C(60,6) = 60! / 6!(60 - 6)!  */
 void geraCombMegaSena(void){
-	void interna(int a, int b, int auxb, int c, int auxc, int d, int auxd, int e, int auxe, int f, int auxf, int cont, int conttotal){
-		if(a < b && b < c && c < d && d < e && e < f){
-		   printf("%d %d %d %d %d %d\t\t%d\t\t%d\n", a, b, c, d, e, f, cont, conttotal);
-		   cont++;
-		}
+	void interna(int a, int b, int c, int d, int e, int f, int cont, int conttotal){
+
+
+
 		conttotal++;
 		if(f == 10){
             e++;
-            f = auxf;
-            if(e == 10){
+            f = 6;
+            if(e == 9){
                 d++;
-                e = auxe + 1;
-                if(d == 10){
+                e = 5;
+                if(d == 8){
                     c++;
-                    d = auxd + 1;
-                    if(c == 10){
+                    d = 4;
+                    if(c == 7){
                         b++;
-                        c = auxc + 1;
-                        if(b == 10){
+                        c = 3;
+                        if(b == 6){
                             a++;
-                            b = auxb + 1;
+                            b = 2;
+                            printf("%d %d %d %d %d %d\t\t%d\t\t%d\n", a, b, c, d, e, f, cont, conttotal);
+                            cont++;
                         }
                         if(a == 6) exit(0);
                     }
                 }
             }
         }
-		interna(a, b, auxb, c, auxc, d, auxd, e, auxe, f + 1, auxf, cont, conttotal);
+		interna(a, b, c, d, e, f + 1, cont, conttotal);
 	}
-	interna(1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 1, 1);
+	interna(1, 2, 3, 4, 5, 6, 1, 1);
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
