@@ -845,8 +845,8 @@ void geraCombMegaSena(void){
                         if(b > 56){
                             b = a + 1;
                             a++;
+                            if(a == 56) exit(0);
                         }
-                        if(a == 56) exit(0);
                     }
                 }
             }
