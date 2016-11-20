@@ -830,23 +830,23 @@ void arranjo(int n){
 	C(60,6) = 60! / 6!(60 - 6)!  */
 void geraCombMegaSena(void){
 	void interna(int a, int b, int c, int d, int e, int f, int cont, int conttotal){
-		if(f > 10){
+		if(f > 60){
+            f = e + 1;
             e++;
-            f = 6;
-            if(e > 9){
+            if(e > 59){
+                e = d + 1;
                 d++;
-                e = 5;
-                if(d > 8){
+                if(d > 58){
+                    d = c + 1;
                     c++;
-                    d = 4;
-                    if(c > 7){
+                    if(c > 57){
+                        c = b + 1;
                         b++;
-                        c = 3;
-                        if(b > 6){
+                        if(b > 56){
+                            b = a + 1;
                             a++;
-                            b = 2;
                         }
-                        if(a == 6) exit(0);
+                        if(a == 56) exit(0);
                     }
                 }
             }
