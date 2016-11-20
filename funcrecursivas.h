@@ -94,7 +94,7 @@ int palindromoTeste(char * str);
 
 int sequencia2(int n);
 
-
+void arranjo(int n);
 
 void geraCombMegaSena(void);
 
