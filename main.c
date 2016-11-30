@@ -269,11 +269,12 @@ int main(int argc, char *argv[]){
 
 	printf("O RESULTADO DE a X b EH %d\n", multIncremento(a, b));
 
-	geraCombMegaSena();
-
     */
 
-	arranjo(5);
+	geraCombMegaSena();
+
+
+//	arranjo(5);
 
 
 	return 0;

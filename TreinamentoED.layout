@@ -2,6 +2,11 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="default" />
+	<File name="funcrecursivas.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1413" topLine="78" />
+		</Cursor>
+	</File>
 	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="9036" topLine="251" />
@@ -12,10 +17,5 @@
 			<Cursor1 position="26918" topLine="805" />
 		</Cursor>
 	</File>
-	<File name="funcrecursivas.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1413" topLine="78" />
-		</Cursor>
-	</File>
-	<EditorTabsLayout layout="096432a8583103360000c86600000002=0;TreinamentoED:main.c,*1;TreinamentoED:funcrecursivas.c,2;TreinamentoED:funcrecursivas.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=615;besth=305;minw=615;minh=305;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=096432a8583103360000c86600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="099e99a0583ad1c10000988b00000002=0;TreinamentoED:main.c,*1;TreinamentoED:funcrecursivas.c,2;TreinamentoED:funcrecursivas.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=615;besth=305;minw=615;minh=305;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=099e99a0583ad1c10000988b00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
